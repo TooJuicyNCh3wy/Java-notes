@@ -1,14 +1,15 @@
 WHAT IS JDK?
 ===============
 JDK - (Java Development Kit) developers tool
-	JRE - (Java Runtime Env.) Libraries
-		JVM - (Java Virtual Machine) Runs Java programs 
+- JRE - (Java Runtime Env.) Libraries
+	- JVM - (Java Virtual Machine) Runs Java programs
+
 
 WHAT IS IDE?
 ===============
-I - Intergrated
-D - Development
-E - Environment
+- I - Intergrated
+- D - Development
+- E - Environment
 
 (Software that help us Software)
 
@@ -84,7 +85,8 @@ OUTPUT:
 	I Love pizza
 	Its really Goood!
 ```
-BONUS
+\ Inputs
+===========
 if you have experience from C++ this should be familiar
 ```
 \n
@@ -124,9 +126,42 @@ for this input its the same backslash that we used for \n but for this time we u
 ```
 \t
 ```
+
 the differnce for \t and \n is that for \n it would be right by the end quote, but, for \t it would be in the starting quote
 Soooo it should be like this
 
 ```
 System.out.Println("\tI love pizza");
+
+OUTPUT:
+	I love pizza
+Its really Good!
 ```
+now lets try ouputting quotation marks
+```
+System.out.println(""I love Pizza"");
+```
+wait woah woah woah there
+you cant just do that.
+the compiler would be confused because we cannot normally add a set of quotes because our text already needs to be surrounded with quotes
+
+SO
+in order to literally display some quotes, we need to precede our double quotes with \\
+thus had to type this code to output "\\"
+like this
+```
+System.out.println("\"I love Pizza\"");
+
+OUTPUT:
+
+"I love Pizza"
+```
+Same goes to display a backslash("\\")
+```
+System.out.println("\\I love Pizza");
+
+OUTPUT:
+
+\I love Pizza
+```
+
