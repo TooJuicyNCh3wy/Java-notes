@@ -1,2 +1,2 @@
 # Java-notes
-learn hpw to code java
+learn how to code java
