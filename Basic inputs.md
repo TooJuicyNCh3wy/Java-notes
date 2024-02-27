@@ -164,4 +164,42 @@ OUTPUT:
 
 \I love Pizza
 ```
+in summary a backslash is anything preceding with a backslash is the beginning of an escape Sequence and theres multitude of characters that could follow afterwards and depending on the character
+this has special meaning for your compiler to do something specific.
 
+/ Inputs
+==========
+
+NOW
+.
+anything that is following TWO Foward Slashes is the beginning of a single line comment
+```
+//
+```
+and you can basically write everything with those 2 foward slashes
+```
+// Learning JAVA is so much fun :))
+```
+that line of text would be ignored by the compiler so theres going to be NO CHANGE to this program with the additional comment 
+
+ANYTHING THAT IS A COMMENT IS GONNA BE IGNORED BY THE COMPIILER 
+If you need to leave yourself a note or for someone thats looking over your code
+
+if you need a multi-line comment that right there is foward slash, followed by a asteriskas shown below
+```
+/*
+```
+and anything up to asterisk and foward slash
+```
+*/
+```
+will be the balance of this comment
+```
+/*
+* Hi My Name is Andy 
+* This Is My Java coding notes
+* Random Fact of me is that i like to play a game thats over 20 years old on the 
+* nintendo gamecube called Super Smash Bros. Melee
+*/
+```
+all these lines would be ignored by the compiler and will not change anything whatsoever
