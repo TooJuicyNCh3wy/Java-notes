@@ -113,4 +113,20 @@ now lets go to a smaller input
 
 "byte"
 
- 
+REMEMBER
+
+byte stores a much smaller number than "long" and "int"
+
+so with "byte" we can only put numbers from -128 to 127
+
+as shown below: 
+```
+byte x = 100;
+```
+so like literallly put a number above 127, like 130
+
+it would output an error
+
+...
+
+god why even bother showing byte if we barely ever use this for a beginner because its just way more convinient to just use "int" 
