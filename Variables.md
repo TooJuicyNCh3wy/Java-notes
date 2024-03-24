@@ -129,4 +129,14 @@ it would output an error
 
 ...
 
-god why even bother showing byte if we barely ever use this for a beginner because its just way more convinient to just use "int" 
+god why even bother showing byte if we barely ever use this for a beginner because its just way more convinient to just use ```int``` 
+
+However you might have to use ```long``` every once in a while
+
+but as beginners, we're mostly going to be sticking with intergers
+
+for double it would with decimals
+
+for ```int``` it would'nt be able to read the decimal giving us an erro
+
+
