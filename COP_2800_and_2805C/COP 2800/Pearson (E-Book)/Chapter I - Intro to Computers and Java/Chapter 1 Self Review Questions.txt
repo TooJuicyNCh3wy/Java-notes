@@ -1,0 +1,66 @@
+
+1.3
+
+III) Computers store information using switches that are turned on or off to _______.
+
+	A) green or red
+	B) yes or no
+	C) 0 or 1
+	D) solid or flash
+
+IV) What amount of memory is enough to store a letter of the alphabet or a small number?
+
+	A) a binary digit
+	B) a megabyte
+	C) a byte
+	D) a bit
+
+V) What is a memory address?
+
+	A) a binary value assigned to each input device
+	B) a unique number assigned to each section of memory
+	C) a partitioned section of secondary storage
+	D) the part of the computer where memory is located
+
+VI) Main memory, or RAM, is used for permanent storage of data.
+
+	- True
+	- False
+
+VII) What are the two general categories of software?
+
+	A) operating systems and application software
+	B) desktop programs and web browsers
+	C) primary systems and support systems
+	D) utility programs and scripting tools
+
+VIII) An operating system is the set of programs that manages the computer’s hardware devices and controls their processes.
+
+	- True
+	- False
+
+IX) Word processing programs, spreadsheet programs, e-mail programs, web browsers, and game programs belong to what category of software?
+
+	A) desktop programs
+	B) application software
+	C) system software
+	D) server programs
+
+1.4
+
+X) A(n) ______ is a set of well-defined steps for performing a task or solving a problem.
+
+
+XI) What is an example of machine language?
+
+	A) 10010101
+	B) “Hello, World!”
+	C) address 72
+	D) fetch input
+
+XII) Programming languages were invented to _______.
+
+	A) ease the task of programming
+	B) mimic human language
+	C) ease the work of computers
+	D) mimic machine language

@@ -1,0 +1,93 @@
+Program
+	- a set of instructions a computer follows in order to perform a task.
+	- a special language used to write computer programs.
+
+What Is a Program?
+	- Computers are designed to follow instructions. 
+
+Computer Program 
+	- a set of instructions that enable the computer to solve a problem or perform a task. 
+		- For example:
+			- suppose we want the computer to calculate someone’s gross pay. The following is a list of things the computer should do to perform this task.
+
+
+				1. Display a message on the screen: “How many hours did you work?”
+
+				2. Allow the user to enter the number of hours worked.
+
+				3. Once the user enters a number, store it in memory.
+
+				4. Display a message on the screen: “How much do you get paid per hour?”
+
+				5. Allow the user to enter an hourly pay rate.
+
+				6. Once the user enters a number, store it in memory.
+
+				7. Once both the number of hours worked and the hourly pay rate are entered, 
+				   multiply the two numbers and store the result in memory.
+
+				8. Display a message on the screen that shows the amount of money earned. The
+                                   message must include the result of the calculation performed in Step 7.
+
+
+Collectively, these instructions are called an algorithm. 
+
+Algorithm 
+	- A set of well-defined steps for performing a task or solving a problem. 
+
+Notice that these steps are sequentially ordered. Step 1 should be performed before Step 2, and so forth. It is important that these instructions be performed in their proper sequence.
+
+Although you and I might easily understand the instructions in the pay-calculating algorithm, it is not ready to be executed on a computer. A computer’s CPU can only process instructions that are written in machine language. If you were to look at a machine language program, you would see a stream of binary numbers (numbers consisting of only 1s and 0s). The binary numbers form machine language instructions, which the CPU interprets as commands. Here is an example of what a machine language instruction might look like:
+
+
+1011010000000101 
+
+
+As you can imagine, the process of encoding an algorithm in machine language is very tedious and difficult. In addition, each different type of CPU has its own machine language. If you wrote a machine language program for computer A and then wanted to run it on computer B, which has a different type of CPU, you would have to rewrite the program in computer B’s machine language.
+
+Programming languages, which use words instead of numbers, were invented to ease the task of programming. A program can be written in a programming language, which is much easier to understand than machine language, and then translated into machine language. Programmers use software to perform this translation. Many programming languages have been created. Table 1-1 lists a few of the well-known ones.
+
+Table 1-1
+Some well-known programming languages
+============================
+ Language	Description
+============================
+C	     ||	C is a structured, general-purpose, procedural language developed at Bell Laboratories.
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+C+ +	     ||	Based on the C language, C+ + offers object-oriented features not found in C. C+ + was also invented at Bell Laboratories. 
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+C# 	     ||	Pronounced “C sharp.” It is a language created by Microsoft for developing applications based on the Microsoft .NET platform. 
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Go	     || 	Go was created at Google and is primarily used to develop systems software and large server-based systems.
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Java	     ||	Java is an object-oriented language invented at Sun Microsystems, and is now owned by Oracle. It may be used to develop stand-alone 
+	     ||	applications that operate on a single computer, mobile apps, or applications that run over the Internet from a Web server.
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+JavaScript   ||	JavaScript is a programming language that can be used in a Web site to perform simple operations. Despite its name, JavaScript is not related
+ 	     ||  to Java. 
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Kotlin	     ||  Although Kotlin is a general-purpose programming language, it is widely used to develop Android mobile apps.
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+PHP	     ||	A programming language used primarily for developing Web server applications and dynamic Web pages.
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Python 	     ||	Python is an object-oriented programming language used in both business and academia. It is a popular language for Web applications, machine 
+	     ||	learning, and data science. 
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+R	     ||	The R programming language is used for statistical computation and working with large sets of data. 
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Ruby	     ||	Ruby is a simple but powerful object-oriented programming language. It can be used for a variety of purposes, from small utility programs to 
+	     ||	large Web applications. 
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Swift	     ||	Swift was created at Apple, primarily for writing apps that run on iOS devices.
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Visual Basic ||	Visual Basic is a Microsoft programming language and software development environment that allows programmers to create Windows-based applications quickly.
+
+
+A History of Java
+In 1991 a team was formed at Sun Microsystems (a company that is now owned by Oracle) to speculate about the important technological trends that might emerge in the near future. The team, which was named the Green Team, concluded that computers would merge with consumer appliances. Their first project was to develop a handheld device named *7 (pronounced star seven) that could be used to control a variety of home entertainment devices. For the unit to work, it had to use a programming language that could be processed by all the devices it controlled. This presented a problem because different brands of consumer devices use different processors, each with its own machine language.
+
+Because no such universal language existed, James Gosling, the team’s lead engineer, created one. Programs written in this language, which was originally named Oak, were not translated into the machine language of a specific processor, but were translated into an intermediate language known as byte code. Another program would then translate the byte code into machine language that could be executed by the processor in a specific consumer device.
+
+Unfortunately, the technology developed by the Green Team was ahead of its time. No customers could be found, mostly because the computer-controlled consumer appliance industry was just beginning. But rather than abandoning their hard work and moving on to other projects, the team saw another opportunity: the Internet. The Internet is a perfect environment for a universal programming language such as Oak. It consists of numerous different computer platforms connected together in a single network.
+
+To demonstrate the effectiveness of its language, which was renamed Java, the team used it to develop a Web browser. The browser, named HotJava, was able to download and run small Java programs known as applets. This gave the browser the capability to display animation and interact with the user. HotJava was demonstrated at the 1995 SunWorld conference before a wowed audience. Later the announcement was made that Netscape would incorporate Java technology into its Navigator browser. Other Internet companies rapidly followed, increasing the acceptance and the influence of the Java language. Today, Java is very popular for developing Web applications, mobile apps, and desktop applications.

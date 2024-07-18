@@ -1,0 +1,6 @@
+This book teaches programming using Java. Java is a powerful language that runs on practically every type of computer. 
+It can be used to create large applications, small programs, mobile applications, and code that powers a Web site.
+
+Before plunging right into learning Java, however, this chapter will review the fundamentals of computer hardware and software, and then take a broad look at computer programming in general.
+
+END OF 1.1
