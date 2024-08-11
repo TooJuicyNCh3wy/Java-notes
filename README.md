@@ -6,7 +6,7 @@ learn how to code java
   - Once thats Downloaded, Download an IDE Which can be Either
     - Eclipse
     - IntelliJ IDEA
-- Replit -----------> https://replit.com/
+- Replit --> https://replit.com/
 - Visual Studio Code (ofc)
 
   
