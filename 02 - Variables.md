@@ -162,9 +162,9 @@ public class Main {
   public static void main(string[] args){
 
     int x = 123;
-    double y = 3.14
+    double y = 3.14;
 
-    System .out.println(y);
+    System.out.println(y);
 
   }
 
