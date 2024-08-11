@@ -59,10 +59,11 @@ Reference
 # how to make a Variable on the Compiler
 ```
 int x; // Declaration
-x = 12; // assignment
+x = 123; // Assignment
+
 OR
 
-int x = 12; // initialization
+int x = 123; // initialization
 ```
 either or is good :)
 we could print this to the console window within a print or print line statement
@@ -90,7 +91,7 @@ OUTPUT:
 My Number is: 123
 
 ```
-and remember taht the largest that "int" can go is 2,000,000,000 (Billion) 
+and remember that the largest that "int" can go is 2,000,000,000 (Billion) 
 
 sooo
 
@@ -112,30 +113,81 @@ now lets go to a smaller input
 
 "byte"
 
-REMEMBER
+**REMEMBER**
 
-byte stores a much smaller number than "long" and "int"
-
-so with "byte" we can only put numbers from -128 to 127
-
-as shown below: 
+byte stores a much smaller number than "long" and "int" so with "byte" we can only put numbers from -128 to 127 as shown below: 
 ```
 byte x = 100;
 ```
-so like literallly put a number above 127, like 130
-
-it would output an error
+so like literallly put a number above 127, like 130 it would output an error
 
 ...
 
 god why even bother showing byte if we barely ever use this for a beginner because its just way more convinient to just use ```int``` 
 
-However you might have to use ```long``` every once in a while
+However you might have to use ```long``` every once in a while but as beginners, we're mostly going to be sticking with intergers 
 
-but as beginners, we're mostly going to be sticking with intergers
+For ```double```, it would with decimals for ```int``` it would'nt be able to read the decimal giving us an error
 
-for double it would with decimals
+```
+int x = 123.01
 
-for ```int``` it would'nt be able to read the decimal giving us an erro
+OUTPUT:
 
+ERROR!
+```
+but with a double or a float having a decimal number it does not affect them at all...soo lets give it a shot
 
+```
+public class Main {
+
+  public static void main(String[] args){
+
+    int x = 123;
+    float y = 3.14f;
+
+    System.out.println(y);
+
+  }
+
+}
+```
+a common convention for assigning numbers/values to ```float``` variables is that IT HAS TO END WITH A LOWER CASE F. So that you can store a number with a decimal portion wihin a float or a double.
+
+now lets add it in the code source
+
+```
+public class Main {
+
+  public static void main(string[] args){
+
+    int x = 123;
+    double y = 3.14
+
+    System .out.println(y);
+
+  }
+
+}
+```
+And as you can see you dont need a letter at the end of the number
+
+just the decimal
+
+nothing much
+
+nothing else
+
+now for boolean...remember that you only have to only put either ```true``` or ```false```
+
+and whenever we put that in our code source
+```
+boolean z = false;
+
+System.out.println(z);
+
+output:
+
+false
+
+```
