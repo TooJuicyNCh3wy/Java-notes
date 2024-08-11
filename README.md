@@ -7,7 +7,9 @@ learn how to code java
     - Eclipse
     - IntelliJ IDEA
 - Replit -----------> https://replit.com/
+- Visual Studio Code (ofc)
 
+  
 # Video Recources
 
 https://www.youtube.com/watch?v=xk4_1vDrzzo&t=13s
