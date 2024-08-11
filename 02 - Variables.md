@@ -17,18 +17,17 @@ z = True
 
  # Data Types
  ```
-Data Type___Size___Primitive / Reference___value
-*boolean   1 Bit   Primitive      True or false
-byte       1 byte  Primitive      -128 to 127
-short      2 bytes Primitive      -32,768 to 32,767
-*int       4 bytes Primitive      -2 Billion to 2 Billion
-long       8 bytes Primitive      -9 Quintillion to 9 Quintillion
-
-float      4 bytes Primitive      Fractional number up to 6-7 Digits (3.141592f)
-*double    8 bytes Primitive      Fractional number up to 15 Digits
-
-*char      2 bytes Primitive      Single character/letter/ASCII Value (Ex. 'f')
-*string    varies  Reference      A sequence of characters (ex. "Hello World!")
+Data Type  Size    Primitive / Reference    value
+====================================================
+*boolean   1 Bit         Primitive          True or false
+byte       1 byte        Primitive          -128 to 127
+short      2 bytes       Primitive          -32,768 to 32,767
+*int       4 bytes       Primitive          -2 Billion to 2 Billion
+long       8 bytes       Primitive          -9 Quintillion to 9 Quintillion
+float      4 bytes       Primitive          Fractional number up to 6-7 Digits (3.141592f)
+*double    8 bytes       Primitive          Fractional number up to 15 Digits
+*char      2 bytes       Primitive          Single character/letter/ASCII Value (Ex. 'f')
+*string    varies        Reference          A sequence of characters (ex. "Hello World!")
 ```
  There are 8 data types and a special reference data type called a string 
  the ones with the * are the more important ones
