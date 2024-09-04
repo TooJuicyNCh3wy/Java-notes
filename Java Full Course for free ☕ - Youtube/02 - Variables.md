@@ -178,6 +178,8 @@ nothing much
 
 nothing else
 
+----------------------
+
 now for boolean...remember that you only have to only put either ```true``` or ```false```
 
 and whenever we put that in our code source
@@ -191,3 +193,78 @@ output:
 false
 
 ```
+And those are the ONLY 2 it can output 
+EITHER
+- True
+- False
+
+and that is it
+
+----------------------
+
+We Have Characters
+
+```char``` for short 
+we dont necessarily need to come up with a variable that's only one letter, we could have a name of something that is descriptive for ```char```
+
+lets say we have a variable called ``` "symbol" ``` 
+
+soo
+```
+char symbol = '@'; // within single quotes
+```
+so now we have 
+- a variable called ```symbol``` that contains the @ sign
+
+So,
+
+if i were to display this variable symbol to the console window... I would have to put symbol in the parentheses on the ```System.out.println()```
+
+outputing the symbol that was on single quotes...
+
+as shown below
+```
+public class Main {
+  public static void main{String[] args){
+
+      char symbol = '@';
+
+      System. out.println(symbol);
+      }
+}
+OUTPUT:
+
+@
+```
+and now we have ```string```, the thing about string is that it starts with a capital ```S``` instead of the other commands being lower cased...And also its a reference data type
+
+ANYTHING THAT IS A REFERENCE DATA TYPE BEGINS WITH A CAPITAL LETTER
+
+lets try it out shall we?
+
+Look down below
+```  
+public class Main {
+
+    public static void main (String[] args){
+
+    String name = "Andy"
+
+    System.out.println(name);
+    }
+}
+OUTPUT:
+
+Andy
+```
+You can also add quotes to the console window as well
+
+like
+```
+    System.out.println("Hi "+name);
+```
+Let Me Explain What i just did
+- I Added the Double Quotes to addd text to the console window to output the text thats inside the "" marks
+- added the plus for basically saying "add this as well"
+- and the "name" is the command that under the command ```String```
+
