@@ -59,4 +59,19 @@ inside the ```main()``` method, can use the ```println()``` method to print a li
 ```
 
 ---------------------------------------------------------
-**Note:** te curly braces ```{}``` marks the beginning and the end of a block of the code.
+**Note:** the curly braces ```{}``` marks the beginning and the end of a block of the code.
+
+```System``` is a built-in Java class that contains useful members, 
+such as 
+- ```out```
+  - Short for "output"
+- The ```println()``` method
+  - Short for "Print line", is used to print a value to the screen (or a file).
+ 
+Don't worry too much how ```System```, ```out``` and ```println()``` works. Just know that you need them together to print stuff to the screen.
+
+You should also note that each code statement must end with a semicolon (```;```).
+
+----------------------------------------------------------
+
+
