@@ -42,3 +42,21 @@ the main method is required and you will see it in EVERY Java Program
 ```
 public static void main(String[] args)
 ```
+Any code inside the ```main()``` method will be executed. 
+
+DO NOT WORRY ABOUT THE KEYWORDS BEFORE AND AFTER...you'll get to know them hit by bit while reading here :))
+
+For now, just remember that every Java Program has a ```class``` name which must match the```filename```, and that every program must contain the ```main()``` method.
+
+------------------------------------------
+# System.out.println()
+
+inside the ```main()``` method, can use the ```println()``` method to print a line of text to the screen
+```
+  public static void main(String[] args) {
+      System.out.println("Hello World");
+}
+```
+
+---------------------------------------------------------
+**Note:** te curly braces ```{}``` marks the beginning and the end of a block of the code.
