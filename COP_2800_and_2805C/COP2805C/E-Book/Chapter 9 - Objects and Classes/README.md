@@ -1,238 +1,77 @@
-# Summary of Chapter 9
+![image](https://github.com/user-attachments/assets/848a88c9-c75d-40fa-a4a8-3dc98880c757)
 
-# 9.1
-**Key Point**
-- Obejct- oriented programming enables you to develop large-scale software and GUIs effectively
+Object-oriented programming (O O P) involves programming using objects. An object represents an entity in the real world that can be distinctly identified. For example, a student, a desk, a circle, a button, and even a loan can all be viewed as objects. An object has a unique identity, state, and behaviors. The state of an object consists of a set of data fields (also known as properties) with their current values. The behavior of an object is defined by a set of methods.
 
-Why O.O.P?
-- it is essentially a technology for developing reusable software.
+-----------------
+![image](https://github.com/user-attachments/assets/80899f0b-ce28-4157-8aff-9e47f8f88d5a)
 
---------------------------------
-# 9.2
-**Key Point**
-- _a Class defines the properties and behaviors for objects._
+![image](https://github.com/user-attachments/assets/4c90f30d-f03d-4401-8b5e-3a294cc68e3b)
 
-# State of an object
-Object-Oriented Programming 
-- OR OOP for Short
-  - involes programming object
- 
-Object represents an entity in the real world that can be distincly identified
+An object has both a state and behavior. The state defines the object, and the behavior defines what the object does.
 
-EXAMPLE
 ```
-- Student
-- desk
-- circle
-- button
-- loan
+Class name, Circle.
+Data fields. Radius is, blank space. Methods, getArea.
+Three objects of the Circle class are as follows.
+Circle object 1. Data fields, radius is 10.
+Circle object 2. Data fields, radius is 25.
+Circle object 3. Data fields, radius is 125.
 ```
-All of these can be viewed as objects
+-------------------------------------------
+![image](https://github.com/user-attachments/assets/ca96c495-cb1b-4b4e-8223-45fd54676146)
 
-An Object has a Unique identity, state, and behavior
-- the **_State_** of an Object
-  - AKA its Properties **OR** Attributes
-    -  is Represented by _Data Fields_ with their current values.
-    -  EXAMPLE
+Classes are constructs that define objects of the same type. A Java class uses variables to define data fields and methods to define behaviors. Additionally, a class provides a special type of methods, known as constructors, which are invoked to construct objects from the class.
+
+![image](https://github.com/user-attachments/assets/bd0b925b-814f-4292-9176-4f1d03e75427)
 ```
-A Circle Object as the EXAMPLE
-has a Data field
-- Radius
-which is the property that characterize a circle
+Line 1, indicates class Circle open braces.
+Line 2, slash forward address address The radius of this circle address slash forward.
+Line 3, double radius equal to 1.0 semicolon.
+
+The line 3 is Data field.
+
+Line 4, Blank.
+Line 5, slash forward address address Construct a circle object address slash forward.
+Line 6, Circle open parenthesis close parenthesis open braces.
+Line 7, close braces.
+Line 8, Blank.
+Line 9, slash forward address address Construct a circle object address slash forward.
+Line 10, Circle open parenthesis double new Radius close parenthesis open braces.
+Line 11, radius equal to new Radius semicolon.
+Line 12, close braces.
+
+The lines 5, 6, 7, 8, 9, 10, 11 and 12 are Constructors.
+
+Line 13, Blank.
+Line 14, slash forward address address Return the area of this circle address slash forward.
+Line 15, double get Area open parenthesis close parenthesis open braces.
+
+The line 15 is Method.
+
+Line 16, return radius address radius address 3 period 14159 semicolon.
+Line 17, close braces.
+Line 18, close braces. 
 ```
+---------------------------
+![image](https://github.com/user-attachments/assets/14475017-00d1-449c-9ba8-9e1805beb4da)
 ```
-A rectangle object as the EXAMPLE
-has the data field(s)
-- width
-- height
-which are the propertes that characterize a rectangle.
+Row 1 shows the Class name (circle).
+Row 2 shows the Data fields (radius: double).
+Row 3 shows the computer coding of 6 lines for Constructors and methods.
+
+Line 1, indicates Circle open parenthesis close parenthesis.
+Line 2, Circle open parenthesis new Radius colon double close parenthesis.
+Line 3, g e t Area open parenthesis close parenthesis colon double. L
+ine 4, g e t Perimeter open parenthesis close parenthesis colon double.
+Line 5, s e t Radius open parenthesis new Radius colon.
+Line 6, double close parenthesis colon void. A left side text box shows the 2 rows of UML notation for objects.
+
+Row 1 shows the Circle 1 colon Circle.
+Row 2 shows the radius equal to 1.0. A middle text box shows the 2 rows of UML notation for objects.
+
+Row 1 shows the Circle 2 colon Circle.
+Row 2 shows the radius equal to 25. A right side text box shows the 2 rows of UML notation for objects.
+
+Row 1 shows the Circle 3 colon Circle.
+Row 2 shows the radius equal to 125.
 ```
-the **_behavior_** of an object
-- AKA its actions
-  - is defined by methods
-  - to invoke a method on an object is to ask the object to perform an action.
-    - EXAMPLE
-
-you may define methods named
-```
-getArea();
-getPerimeter();
-```
-for Circle objects
-
-A Circle object can invoke
-```
-getArea();
-```
-to return its area and
-```
-getPerimeter();
-```
-to return its perimeter
-
-you may also define this method
-```
-setRadius(radius);
-```
-A Circle Object can invoke this method to change its radius.
-
-----------------------------------------------------
-# Contract / Objects
-Objects of the same type are defined using a common _class_
-Class
-- A Template, blueprint, or contract that defines what an object's data fields and methods would be.
-
-Object
-- an instance of a class
-
-You can create instances of a class. Creating a instance is reffered to as **_instantiation_**.
-
-The terms object and instance are often interchangeable.
-
-This Below shows a class named ```Circle``` and its 3 objects
-
-![56280ef813d9bdffb8a9c8c8f89ee9e7](https://github.com/user-attachments/assets/381e84db-43a5-4ff8-9de4-d4d383edc836)
-
-# Method 
-A Java Class uses variables to define data fields and methods to define actions
-
-In Addition, 
-- a class provides methods of a special type
-  - known as **_Constructors_**
-    - which are invoked to create a new object
-
-A Constructor can perform any action...**BUT**...constructors are designed to perfrom initializing actions
-- SUCH AS
-  - initializing the data fields of objects
-
-These code(s) below shows an EXAMPLE of defining the class for circle objects.
-
-Remember:
-- A Class is a Construct that Defines objects of the same type
-```
-class Circle {
-```
-```
-  /** Data Fields */
-
-  /** The Radius of the Circle */
-  double radius = 1;
-```
-```
-  /** Constructors */
-
-  /** Construct a circle object */
-  Circle() {              
-  }
-
-  /** Construct a circle object */
-  Circle(double newRadius) {
-    radius = newRadius;
-  }
-```
-```
-  /** Methods */
-
-  /** Return the Area of this Circle */
-  double getArea() {
-    return radius * radius * Math.PI;
-  }
-
-  /** Return the Perimeter of this circle */
-  double getPerimeter() {
-    return 2 * radius * Math.PI;
-  }
-
-  /** Set a new radius for this circle */
-  void setRadius(double newRadius) {
-    radius = newRadius;
-  }
-}
-```
-# Main Class
-The ```Circle``` Class is different from all of the other classes you have seen thus far
-
-It does not have the ```main``` Method, and therefore, cannot be run; it is merely a definition for circle objects. The class that contains the ```main``` Method will be referred to in his book, for convinience, as the main class.
-
-# Class Diagram
-The illustration of class templates and objects in the image above can be standardized using **_Unified Modeling Language (UML)_** notation.
-
-This notation as shown below is called a UML Class diagram...
-
-Or
-
-simply a _class diagram_. in the class diagram, the data field is denoted as
-```
-dataFieldName: dataFieldType
-```
-REMEMBER:
-- Classes and Objects can be represented using UML notation.
-
-![18a472d42bf404dec3d766f8317e6c83](https://github.com/user-attachments/assets/d940e22e-727f-478d-af2a-d3a579fb5525)
-
-The constructor is denoted as:
-```
-ClassName(parameterName: parameterType)
-```
-The Method is denoted as
-```
-methodName(parameterName: parameterType): returnType
-```
-# 9.3 were just examples
-# 9.4
-# Constructing Objects Using Constructors
-
-**Key Point**
-- A **_Constructor_** is invoked to create an object using the new operator.
-
------------------------------
-Constructors are a special kind of method
-
-There are 3 kinds of pecularities
-- **Constructor's Name**
-  - A constructor must have the same name as the ```class``` itself
-- **no return type**
-  - Constructors do not have a return type-not even ```void```
-- ```new``` **operator**
-  - Constructors are invoked using the ```new``` operator when an object is created. Constructors play the role of initializing objects.
-
--------------------------------------------------
-# Overloade constructors
-The constructor had exactly the same name as its defining class.
-
-Like regular methods
-  - Constructors can be overloaded, making it easy to construct objects with different initial data values
-    - EXAMPLE
-      - Multiple constructors can have the same name but different signatures
-
-------------------------------
-
-# No ```void```
-it is a common mistake to put the ```void``` keyword in front of a constructor
-
-Like this one right here
-```
-public void Circle() {
-}
-```
-in this case, ```Circle``` is a **Method, NOT AS A CONSTRUCTOR**
-
--------------------------------------------------------------------
-# Constructing objects 
-Constructors are used to construct oobjects. to construct an object from a class, invoke a constructor of the class using the ```new``` operator
-
-As Shown Below:
-```
-new ClassName(arguments);
-```
-EXAMPLE:
-- ```new Circle()``` creates an objects of the ```Circle``` class using the first constructor defined in the ```Circle``` class, and ```new Circle(25)``` creates an object using the second constructor defined in the ```Circle``` class
-
-A class normally provides a constructor without arguments
-
-EXAMPLE
-- ```Circle()```
-
-Such a coonstructor is reffered to as a "_no-arg_" or "_no-argument_ constructor" 
-
-A class may be defined without constructors. In this case, a public no-arg constructor with an empty body is implicitly defined in the class. This Construstor, called a _default_ constructor, is provided automatically _ONLY IF NO CONSTRUCTORS ARE EXPLICITLY DEFINED IN THE CLASS_.
