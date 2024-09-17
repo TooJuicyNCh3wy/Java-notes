@@ -1,5 +1,4 @@
-# Summary of Chapter 9 
-(PowerPoint)
+# Summary of Chapter 9 (PowerPoint)
 ![image](https://github.com/user-attachments/assets/848a88c9-c75d-40fa-a4a8-3dc98880c757)
 
 Object-oriented programming (O O P) involves programming using objects. An object represents an entity in the real world that can be distinctly identified. For example, a student, a desk, a circle, a button, and even a loan can all be viewed as objects. An object has a unique identity, state, and behaviors. The state of an object consists of a set of data fields (also known as properties) with their current values. The behavior of an object is defined by a set of methods.
