@@ -1,4 +1,4 @@
-#Summary of Chapter 9 
+# Summary of Chapter 9 
 (PowerPoint)
 ![image](https://github.com/user-attachments/assets/848a88c9-c75d-40fa-a4a8-3dc98880c757)
 
