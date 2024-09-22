@@ -110,7 +110,9 @@ If you dint follow the rules when wrint a program,
 - The computer will not be able to understand
   - These 2 Define JAVA Standards
     - Java Language Specification
-      - From 
+      - From [Vocabulary](https://github.com/aalons012/Java-notes/blob/main/Andy's%20Notes.md#j)
+        > 1. a Technical definition of the Java Programming
+        > 2. It Describes all aspects of the language, including the semantics of all types, statements, and expression as well as threads and binary compatibility
     - Java API
       - Also Known As Library
       - Contains predefined classes and interfaces for developeing Java programs
