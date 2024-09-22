@@ -21,10 +21,20 @@ Encoding scheme
 ### I 
 ### J
 Java Application Program Interface (API)
-- 
+- a Set of predefined reules and specifications for accessing a web-based software applications or web tool
+
+Java Language Specification
+1. a Technical definition of the Java Programming
+2. It Describes all aspects of the language, including the semantics of all types, statements, and expressions, as well as threads and binary compatibility
+
 Java Development Kit (JDK)
 - a Cross-platformed software development environment that offers a collection of tools and libraries necessary for developing Java-based software applications and applets.
 
+Java Runtime Environment (JRE)
+- a software layer that allows Java programs to run on any operating system wihout modification
+
+Java Virtual Machine
+- A runtime environment that allows Java Programs to run on different operating systems and platforms. Its am integral part of the **JRE**
 
 ### K 
 ### L
@@ -89,3 +99,40 @@ Software
   - Email Programs
     - To send and receive messages
 
+-----------------------------
+SKIPPING TO 1.6
+
+------------------------------
+## I.VI - The Java Language Specifications, API, JDK, JRE, & IDE
+Computer languages have strict rules of usage.
+
+If you dint follow the rules when wrint a program,
+- The computer will not be able to understand
+  - These 2 Define JAVA Standards
+    - Java Language Specification
+      - From 
+    - Java API
+      - Also Known As Library
+      - Contains predefined classes and interfaces for developeing Java programs
+      - Still Expanding
+     
+Java is a Full Fledged and powerful language that be used i many ways. 
+
+It comes in 3 Editions
+- SE
+  - Standard Edition
+    - To develop applications
+    - The applications can run on Desktop.
+- EE
+  - Enterprise Edition
+    - to develop server-side applications
+      - Such as
+        - Java servlets
+        - JavaServer Pages (JSP)
+        - JavaServer Faces (JSF)
+- ME
+  - Micro Edition
+    - to develop applications for mobile devices
+
+
+    
