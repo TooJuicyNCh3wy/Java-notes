@@ -1,11 +1,20 @@
 # COP 2800 & 2805C - Java I & II Notes
 ## Vocabulary
 ### A 
+Abstract class
+- the process of hiding the intricate code implementation details from the user and just provides the user with the necessary information
+
+
 ### B
 Byte
 - A group of binary digit or bits operated on as a bit
   - For bit it's usually eight
 ### C
+Class Encapsulation
+- the process of combining data and code into a single unit, or class, to hide sensitive data from users
+  - data = variables
+  - code = methods
+
 Class
 1. A set of objects which shares common characteristics/behavior and common properties/attributes
 2. A blueprint for creating objects. It defines the properties and behaviors that the objects from the class will have.
@@ -34,6 +43,8 @@ Encoding scheme
 ### G 
 ### H 
 ### I 
+Implementation class
+- data objects used to store collections, which emplement the interfaces described in the interfaces lesson
 ### J
 Java Application Program Interface (API)
 - a Set of predefined reules and specifications for accessing a web-based software applications or web tool
@@ -91,6 +102,7 @@ Software
 - A Java Program is executed from thr ```main``` method in the class
 ## Chapter 10
 - The focus of this chapter is on class design and to explore the differences between procedural programming and object-oriented programming
+- Class Abstraction is seperation of class implementation from the use of a class. the details of implementation from the use of a class. The details of implementation are encapsulated and hidden from the user. This is known as class encapsuation
 
 # Chapter I - Intro to Computers, Programs & Java
 ## I.I - Intro
@@ -194,7 +206,29 @@ Weclome to Java :))
   - The program is executed from the ```main``` method
   - A class may contain several methods
     - The ```main``` method is the entry point where the program begins execution
-   
+
+The rests talks aboutg string and the basic inputs of Java and what its like that soo look at the 2 links, the ones that are colored blue
+
+...
+
+if you wanna know,
+> string
+> A method is a construct that contains statements. The main method in this program contains the System.out.println statement. This statement displays the string Welcome to Java! on the console (line 4). String is a programming term meaning a sequence of characters. A string must be enclosed in double quotation marks. Every statement in Java ends with a semicolon (;), known as the statement terminator.
+>
+> Keywords have a specific meaning to the compiler and cannot be used for other purposes in the program. For example, when the compiler sees the word class, it understands that the word after class is the name for the class. Other keywords in this program are public, static, and void.
+>
+> Line 3 is a comment that documents what the program is and how it is constructed. Comments help programmers to communicate and understand the program. They are not programming statements, and thus are ignored by the compiler. In Java, comments are preceded by two slashes (//) on a line, called a line comment, or enclosed between /* and */ on one or several lines, called a block comment or paragraph comment. When the compiler sees //, it ignores all text after // on the same line. When it sees /*, it scans for the next */ and ignores any text between /* and */. Here are examples of comments:
+```
+// This application program displays Welcome to Java!
+
+/* This application program displays Welcome to Java! */
+
+/* This application program 
+
+    displays Welcome to Java! */
+```
+> A pair of braces in a program forms a block that groups the program’s components. In Java, each block begins with an opening brace ({) and ends with a closing brace (}). Every class has a class block that groups the data and methods of the class. Similarly, every method has a method block that groups the statements in the method. Blocks can be nested, meaning that one block can be placed within another
+
 ------------------------------------------------------
 # Chapter X - Object-oriented Thinking
 
