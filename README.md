@@ -2,7 +2,7 @@
 learn how to code java
 
 # Andys Actual Notes: ↓↓↓
-TBA
+[CLICK ME](https://github.com/aalons012/Java-notes/blob/main/Andy's%20Notes.md)
 
 # Video Recources
 https://www.youtube.com/watch?v=xk4_1vDrzzo&t=13s
