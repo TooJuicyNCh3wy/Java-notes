@@ -315,6 +315,10 @@ after all this...Its whole
 
 ------------------------------------------------------
 # Chapter X - Object-oriented Thinking
+In **chapter VI**
+- learned method abstraction and used it in stepwise refinement
+
+
 
 ------------------------------------------------------
 # [Vocabulary](https://quizlet.com/946298625/java-vocabulary-flash-cards/?funnelUUID=01255e6f-adf7-440a-9f08-a111d5e187c9)
