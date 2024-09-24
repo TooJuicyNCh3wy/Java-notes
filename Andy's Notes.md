@@ -1,5 +1,5 @@
 # COP 2800 & 2805C - Java I & II Notes
-
+# [Vocabulary](https://quizlet.com/946298625/java-vocabulary-flash-cards/?funnelUUID=01255e6f-adf7-440a-9f08-a111d5e187c9)
 # Key Points
 ## Chapter 1
 - The Central theme of this is to learn how to solve problems by writing a program
@@ -275,4 +275,4 @@ Our focus here is on **class design**. We will use several examples to illustrat
 
 
 ------------------------------------------------------
-# [Vocabulary](https://quizlet.com/946298625/java-vocabulary-flash-cards/?funnelUUID=01255e6f-adf7-440a-9f08-a111d5e187c9)
+
