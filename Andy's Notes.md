@@ -18,31 +18,6 @@
 - Class Abstraction is seperation of class implementation from the use of a class. the details of implementation from the use of a class. The details of implementation are encapsulated and hidden from the user. This is known as class encapsuation
 
 # Chapter I - Intro to Computers, Programs & Java
-## I.I - Intro
-What is Programming?
-- Programming
-  - To create/develop software
-    - Also called Program
-  - In basic terms,
-    - Software contains instructions that tell a computer–or a computerized device–what to do.
-
-Software
-- Its all around you
-- Ofc you expect to find and use software on a personal computer
-- It also plays a role in running
-  - Airplanes
-  - Cars
-  - Cell phones
-    - Android Specifically
-  - EVEN TOASTERS
-- On your personal computer
-  - You use word processors
-    - To write documents
-  - Web browsers
-    - To explore the internet
-  - Email Programs
-    - To send and receive messages
-
 [W3 Schools](https://github.com/aalons012/Java-notes/blob/main/W3%20Schools/1%20-%20Java%20Tutorial/02%20-%20Intro.md)
 
 -----------------------------
@@ -121,26 +96,6 @@ Weclome to Java :))
     - The ```main``` method is the entry point where the program begins execution
 
 The rests talks aboutg string and the basic inputs of Java and what its like that soo look at the 2 links, the ones that are colored blue
-
-...
-
-if you wanna know,
-> string
-> A method is a construct that contains statements. The main method in this program contains the System.out.println statement. This statement displays the string Welcome to Java! on the console (line 4). String is a programming term meaning a sequence of characters. A string must be enclosed in double quotation marks. Every statement in Java ends with a semicolon (;), known as the statement terminator.
->
-> Keywords have a specific meaning to the compiler and cannot be used for other purposes in the program. For example, when the compiler sees the word class, it understands that the word after class is the name for the class. Other keywords in this program are public, static, and void.
->
-> Line 3 is a comment that documents what the program is and how it is constructed. Comments help programmers to communicate and understand the program. They are not programming statements, and thus are ignored by the compiler. In Java, comments are preceded by two slashes (//) on a line, called a line comment, or enclosed between /* and */ on one or several lines, called a block comment or paragraph comment. When the compiler sees //, it ignores all text after // on the same line. When it sees /*, it scans for the next */ and ignores any text between /* and */. Here are examples of comments:
-```
-// This application program displays Welcome to Java!
-
-/* This application program displays Welcome to Java! */
-
-/* This application program 
-
-    displays Welcome to Java! */
-```
-> A pair of braces in a program forms a block that groups the program’s components. In Java, each block begins with an opening brace ({) and ends with a closing brace (}). Every class has a class block that groups the data and methods of the class. Similarly, every method has a method block that groups the statements in the method. Blocks can be nested, meaning that one block can be placed within another
 
 ------------------------------------------------------
 # Chapter IX - Objects and Classes
@@ -310,14 +265,13 @@ Line 2. ```public static void main(String[] args)```
 - Line 48-50: Defines ```setRadius(double newRadius)```, a method that sets the radius of the circle to a new value provided as an argument.
 
 ----------------------------------------------------------------------------
-after all this...Its whole 
-
-
-------------------------------------------------------
 # Chapter X - Object-oriented Thinking
-In **chapter VI**
-- learned method abstraction and used it in stepwise refinement
+## Introduction 
+The preceding chapter introduced objects and classes. You learned how to define classes, create objects, and use objects. This book’s approach is to teach problem solving and fundamental programming techniques before object-oriented programming. This chapter shows how procedural and object-oriented programming differ. You will see the benefits of object-oriented 
+programming and learn to use it effectively.
 
+Our focus here is on **class design**. We will use several examples to illustrate the advantages of the object-oriented approach. The examples involve designing new classes and using them in applications and introducing new classes in the Java API.
+## X.II - Class Abstraction and Encapsulation
 
 
 ------------------------------------------------------
