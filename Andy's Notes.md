@@ -16,7 +16,7 @@ If you cant see ANY of Source Codes...Or read them...[Click on me](https://githu
 - Classes are definitions for objects and Objects are created from classes.
 ## Chapter 10
 - The focus of this chapter is on class design and to explore the differences between procedural programming and object-oriented programming
-- [10.2](https://github.com/aalons012/Java-notes/blob/main/Andy's%20Notes.md#xii---class-abstraction-and-encapsulation) Class Abstraction is seperation of class implementation from the use of a class. the details of implementation from the use of a class. The details of implementation are encapsulated and hidden from the user. This is known as class encapsuation
+- [10.2](https://github.com/aalons012/Java-notes/blob/main/Andy's%20Notes.md#xii---class-abstraction-and-encapsulation) - Class Abstraction is seperation of class implementation from the use of a class. the details of implementation from the use of a class. The details of implementation are encapsulated and hidden from the user. This is known as class encapsuation
 
 # Chapter I - Intro to Computers, Programs & Java
 [W3 Schools](https://github.com/aalons012/Java-notes/blob/main/W3%20Schools/1%20-%20Java%20Tutorial/02%20-%20Intro.md)
