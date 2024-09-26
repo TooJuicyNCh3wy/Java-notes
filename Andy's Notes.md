@@ -272,7 +272,84 @@ programming and learn to use it effectively.
 
 Our focus here is on **class design**. We will use several examples to illustrate the advantages of the object-oriented approach. The examples involve designing new classes and using them in applications and introducing new classes in the Java API.
 ## X.II - Class Abstraction and Encapsulation
+The Creator of a class 
+- **DESCRIBES** the Functions of the class
+- lets the user know how the class is used
 
+The collection of like
+- Constructore
+- methods
+- fields
+  - all these 3 that are accessible from outside the class
+    -  **TOGETHER** with the description of how these members are **Expected** to behave...
+      - Serves as the class contract
+        - As Shown in 10.1 ↓↓↓↓
+
+The Details of implementation are encapsulated and hidden from the user
+- This is known as _class encapsulation_
+  - Example
+    - you can create a ```Circle```object and fine the data of the circle **WITHOUT** knowing how the area is computed
+      - Because of this reason, A class is **ALSO KNOWN AS**
+        - abstract data type (ADT)
+
+---------------------------------------------------------------------
+#### 10.1 - Class Abstraction seperated class implementation from the use of the class
+
+![image](https://github.com/user-attachments/assets/9e737387-7260-48b9-b30b-b230f8a8bad9)
 
 ------------------------------------------------------
+Class Abstraction and Encapsulation are two sides of the same coin. 
 
+Many real-life examples illustrate the concept of Class Abstraction
+
+Like building a Computer. It has many components
+- CPU
+- RAM
+- SSD
+- Motherboard
+- Cooling Fan
+- Exhaust Fans
+
+Each component can be viewed as an object that has properties and methods. To get the components to work together
+- need to know how **EACH component** is used and how it interacts with others
+  - **YOU DONT NEED TO KNOW HOW THE COMPONENTS WORK INTERNALLY**
+
+Internal implementation is encapsulated and hidden for you
+
+The Computer-parts-building system analogy precisely mirrors the Object-Oriented approach
+- Each component can be viewed as an object of the class for the component
+  - EXAMPLE
+    - might have a class that models all kinds of fans for the use of a computer
+      - with properties such as fan size and speed and methods such as start and stop
+      - A Specific fan is an instance of this class with specific property values
+  - ANOTHER EXAMPLE
+    - Getting a Loan
+      - Specific loan that can be viewed as an object of a ```Loan``` class.
+        - Interest Rate
+        - Loan Amount
+        - Loan Period
+          - these 3 are its data properties
+          - and
+          - computing the monthly and total payments are its methods
+    
+---------------------------------------------------------
+Listing 2.9, ComputeLoan.java, presented a program for computing loan payments. 
+
+That program **cannot** be reused in other programs **because** the code for computing the payments is in the ```main``` method. 
+
+One way to fix this problem is to **define static** methods for computing the monthly payment and the total payment. 
+
+However, this solution has limitations. 
+- Suppose that you wish to associate a date with the loan. There is no good way to tie a date with a loan without using objects. 
+
+The traditional procedural programming paradigm is action-driven, and data are separated from actions. The object-oriented programming paradigm focuses on objects, and actions are defined along with the data in objects. To tie a date with a loan, you can define a loan class with a date along with the loan’s other properties as data fields. A loan object now contains data and actions for manipulating and processing data, and the loan data and actions are integrated in one object. 
+
+↓↓↓ 10.2 shows the UML class diagram for the Loan class. ↓↓↓
+
+------------------------------------------------------------------------
+#### 10.2 - The ```Loan``` class models the properties and behaviors of loans
+![image](https://github.com/user-attachments/assets/127e9ef8-dc6c-4e45-8e38-6d536b859209)
+
+---------------------------------------------------------------------------
+This Above...
+Serves as the contract for the ```Loan``` class
