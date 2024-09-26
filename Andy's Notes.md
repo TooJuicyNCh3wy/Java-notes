@@ -351,9 +351,17 @@ The traditional procedural programming paradigm is action-driven, and data are s
 #### 10.2 - The ```Loan``` class models the properties and behaviors of loans
 ![image](https://github.com/user-attachments/assets/127e9ef8-dc6c-4e45-8e38-6d536b859209)
 
---------------------
-
-
 ---------------------------------------------------------------------------
 This Above...
 Serves as the contract for the ```Loan``` class
+
+Rember that a class user can use the class without knowing how the class is implemented
+
+Assume that the ```Loan``` class is available. The Program **Listing 10.1** uses that class.
+
+----------------------------------------------------------------------------
+### ```TestLoanClass.java```
+
+![image](https://github.com/user-attachments/assets/3b6c7f5b-c03e-42ad-adaa-ca491c822c0d)
+
+--------------------
