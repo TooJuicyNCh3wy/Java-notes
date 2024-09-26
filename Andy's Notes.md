@@ -1,4 +1,5 @@
 # COP 2800 & 2805C - Java I & II Notes
+If you cant see ANY Source Codes [Click on me](https://github.com/aalons012/Java-notes/tree/main/COP_2800_and_2805C/Source%20Codes)
 # [Vocabulary](https://quizlet.com/946298625/java-vocabulary-flash-cards/?funnelUUID=01255e6f-adf7-440a-9f08-a111d5e187c9)
 # Key Points
 ## Chapter 1
@@ -349,6 +350,9 @@ The traditional procedural programming paradigm is action-driven, and data are s
 ------------------------------------------------------------------------
 #### 10.2 - The ```Loan``` class models the properties and behaviors of loans
 ![image](https://github.com/user-attachments/assets/127e9ef8-dc6c-4e45-8e38-6d536b859209)
+
+--------------------
+
 
 ---------------------------------------------------------------------------
 This Above...
