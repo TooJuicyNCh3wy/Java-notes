@@ -365,3 +365,40 @@ Assume that the ```Loan``` class is available. The Program **Listing 10.1** uses
 ![image](https://github.com/user-attachments/assets/3b6c7f5b-c03e-42ad-adaa-ca491c822c0d)
 
 --------------------
+The ```main``` method ONLY reads the interest rate the payment period, in years, and the loan amount
+- Thus Creating a ```Loan``` Object
+- Which by then, obtains the monthly payment (Line 24)
+- And the total Payment (Again 24)
+
+if you press run it...doesnt run right?
+
+**its because its missing the ```Loan``` Class**
+
+its the main reason why it cant run at the moment, soo, its add it shall we??
+
+----------------------------------------
+### ```Loan.java```
+
+![image](https://github.com/user-attachments/assets/277668a2-631d-4463-8d3b-e1a1122cf6a8)
+
+---------------------------------------------
+Lets Break it Down
+
+```
+public class Loan {
+```
+it defines a public class named ```Loan```
+```
+private double annualInterestRate;
+private int numberOfYears;
+private double loan Amount
+private java.util.Date loanDate;
+```
+First ```private```
+- Private means that these fields **CAN ONLY BE ACCESSED BY ONLY THIS CLASS...NO ONE ELSE BUT** ```public class Loan```
+- And these private variables that are exclusively to ```Loan```, are for the loan's annual interest rate, number of years, amount, and the date of when it has been locked and loaded
+```
+public Loan(){
+  this(2.5,1,1000);
+}
+```
