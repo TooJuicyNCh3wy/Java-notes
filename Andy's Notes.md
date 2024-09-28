@@ -402,3 +402,9 @@ public Loan(){
   this(2.5,1,1000);
 }
 ```
+This is a no-arg constructor that makes the variables from ```Loan``` with default values
+- 2.5 for default interest rate, for ```double```
+- 1 for how many year(s), for ```int```
+- 1000 for the default loan amount, for ```double``` only because if someone decides to add a decimal point on the loan amount
+
+and by using ```this```, it refers to the current object, ```Loan```, in a method or constructor
