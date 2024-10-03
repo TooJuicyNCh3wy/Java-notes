@@ -17,7 +17,7 @@ If you cant see ANY of Source Codes...Or read them...[Click on me](https://githu
 ## Chapter 10
 - The focus of this chapter is on class design and to explore the differences between procedural programming and object-oriented programming
 - [10.2](https://github.com/aalons012/Java-notes/blob/main/Andy's%20Notes.md#xii---class-abstraction-and-encapsulation) - Class Abstraction is seperation of class implementation from the use of a class. the details of implementation from the use of a class. The details of implementation are encapsulated and hidden from the user. This is known as class encapsuation
-- [10.3]()
+- [10.3](https://github.com/aalons012/Java-notes/blob/main/Andy's%20Notes.md#xiii---thinking-in-objects) - The procedural paradigm focuses on designing methods. The object-oriented paradigm couples data and methods together into objects. Software design using the object-oriented paradigm focuses on objects and operations on objects.
 
 # Chapter I - Intro to Computers, Programs & Java
 [W3 Schools](https://github.com/aalons012/Java-notes/blob/main/W3%20Schools/1%20-%20Java%20Tutorial/02%20-%20Intro.md)
@@ -519,3 +519,12 @@ For all the class examples from now on, create an object from the class and try 
 
 ----------------------------------
 ## X.III - Thinking in Objects
+Chapter's I - VIII were apparently showing them the techniques for using loops, methods and arrays
+
+Knowing these 3...
+- lays a solid foundation for OOP
+
+Classes provide more flexibility and modularity for building reusable software. 
+
+In chapter III.IV there was a program for computing the body mass index (BMI) called ```ComputeAndInterperetBMI.java```
+[click here]()
