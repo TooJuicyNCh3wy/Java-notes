@@ -29,9 +29,26 @@ Trust me no one needs to understand this unless like if you really wanna know he
 [W3 Schools](https://github.com/aalons012/Java-notes/blob/main/W3%20Schools/1%20-%20Java%20Tutorial/02%20-%20Intro.md)
 
 -----------------------------
-SKIPPING TO 1.6
+## I.I - Introduction
+This section provides an overview of the chapter and sets the stage for understanding how computers and Java programming work together.
 
-------------------------------
+## I.II - What is a Computer?
+A computer is an electronic device designed to process and store data. Computers include both hardware (the physical components you can touch) and software (the invisible programs that control the hardware).
+
+Key components discussed include:
+- Central Processing Unit (CPU): Known as the brain of the computer, it retrieves instructions from memory and executes them.
+- Memory (RAM): Stores instructions and data for the CPU. It’s volatile, meaning data is lost when the computer is turned off.
+- Storage Devices: Such as hard drives and USB flash drives, are non-volatile and hold data permanently until deleted.
+- Input/Output Devices: Includes keyboards, mice, monitors, and printers, allowing users to interact with the computer.
+## I.III - Programming Languages
+Computers use programming languages to perform tasks. The chapter explains the types of programming languages:
+- Machine Language: The computer's native binary language.
+- Assembly Language: A low-level language that uses mnemonics instead of binary codes.
+- High-Level Languages: These include Java, Python, and C++, which are more human-readable and must be translated into machine code by a compiler.
+## I.IV - Operating Systems
+The Operating System (OS) is the software that manages the hardware and other software on a computer. Examples include Windows, macOS, and Linux. Java programs can be run on any operating system that has a Java Virtual Machine (JVM), which provides Java's platform independence.
+## I.V - Java, the World Wide Web, and Beyond
+Java was originally designed to run on web browsers via applets, but due to security concerns, applets are no longer used. However, Java is now widely used for building web applications on servers, processing data, and generating dynamic web pages.
 ## I.VI - The Java Language Specifications, API, JDK, JRE, & IDE
 Computer languages have strict rules of usage.
 
