@@ -69,39 +69,20 @@ It comes in 3 Editions
 - [Java Full Course for free ☕ - Youtube](https://github.com/aalons012/Java-notes/blob/main/Java%20Full%20Course%20for%20free%20%E2%98%95%20-%20Youtube/01%20-%20Java%20-%20Tutorial%20%26%20Basic%20Inputs.md)
 - [W3 Schools](https://github.com/aalons012/Java-notes/blob/main/W3%20Schools/1%20-%20Java%20Tutorial/03%20-%20Getting%20Started.md)
 
-What is a Console?
-- The word console is an old computer term that refers to the text entry and display device of a computer.
+## I.VIII Creating, Compiling, and Executing a Java Program
+Java programs are saved in .java files, compiled into .class files, and executed by the JVM. The process involves:
+- Writing the program.
+- Compiling it using the ```javac``` command.
+- Running it using the ```java``` command.
+  
+## I.IX - Programming Style and Documentation
+Good programming style is essential for readability and maintenance. It includes writing clear, concise code, using proper indentation, and documenting the code with comments. The chapter also introduces Javadoc comments, which can generate HTML documentation from code comments.
 
-Console Inpute
-> to recieve input into form the keyboard
-
-Console Output
-> to display output on the monitor 
-
-#### Example 1 
-A Basic Java Program that Displays ```Wdlcome to Java```
-
-![image](https://github.com/user-attachments/assets/d1e37350-d7d0-4ca9-81ef-00e6ad04eff4)
-
-OUTPUT:
-```
-Weclome to Java :))
-```
-
-```line numbers```
-> Note the line numbers are for reference purposes only; they are not part of the program. So, don’t type line numbers in your program.
-
-```class``` name
-- Line 1 defines a class
-- **EVERY JAVA PROGRAM** must have at least one class
-- [Java QuickStart](https://github.com/aalons012/Java-notes/blob/main/W3%20Schools/1%20-%20Java%20Tutorial/03%20-%20Getting%20Started.md#java-quickstart)
-  > The Class Must match with its file name
-- Line 2 is the ```main``` Method
-  - The program is executed from the ```main``` method
-  - A class may contain several methods
-    - The ```main``` method is the entry point where the program begins execution
-
-The rests talks aboutg string and the basic inputs of Java and what its like that soo look at the 2 links, the ones that are colored blue
+## I.X - Programming Errors
+The chapter introduces three types of programming errors:
+- Syntax Errors: Detected by the compiler, these occur when code doesn’t conform to the Java language rules.
+- Runtime Errors: These happen during program execution and can cause the program to crash.
+- Logic Errors: These are errors in the program’s logic that result in incorrect output, even if the program runs successfully.
 
 ------------------------------------------------------
 # Chapter III - Selections
