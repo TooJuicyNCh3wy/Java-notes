@@ -24,6 +24,8 @@ If you cant see ANY of Source Codes...Or read them...[Click on me](https://githu
 - [10.3](https://github.com/aalons012/Java-notes/blob/main/Andy's%20Notes.md#xiii---thinking-in-objects) - The procedural paradigm focuses on designing methods. The object-oriented paradigm couples data and methods together into objects. Software design using the object-oriented paradigm focuses on objects and operations on objects.
 
 # Chapter I - Intro to Computers, Programs & Java
+Trust me no one needs to understand this unless like if you really wanna know heres a summary 
+
 [W3 Schools](https://github.com/aalons012/Java-notes/blob/main/W3%20Schools/1%20-%20Java%20Tutorial/02%20-%20Intro.md)
 
 -----------------------------
