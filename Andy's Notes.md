@@ -10,6 +10,10 @@ If you cant see ANY of Source Codes...Or read them...[Click on me](https://githu
 - Java is a powerful and versatile programming language for developing software running on mobile devices, desktop computers, and servers
 - Java Syntax is defined in the java language specification, and the Java library is defined inthe Java application program interface (API). The JDK is the software for compiling and running java programs. An IDE in integrated development environment for rapidly developing programs.
 - A Java Program is executed from thr ```main``` method in the class
+## Chapter 2
+- 
+## Chapter 3
+- The Program can decide which statments to execute based on a condition
 ## Chapter 9
 - Object-oriented programming enables you to develop large-scale software and GUIs effectively.
 - A class defines the properties and behaviors for objects
@@ -98,6 +102,11 @@ Weclome to Java :))
     - The ```main``` method is the entry point where the program begins execution
 
 The rests talks aboutg string and the basic inputs of Java and what its like that soo look at the 2 links, the ones that are colored blue
+
+------------------------------------------------------
+# Chapter III - Selections
+## III.I Intro
+
 
 ------------------------------------------------------
 # Chapter IX - Objects and Classes
