@@ -3,16 +3,16 @@ If you cant see ANY of Source Codes...Or read them...[Click on me](https://githu
 # [Vocabulary](https://quizlet.com/946298625/java-vocabulary-flash-cards/?funnelUUID=01255e6f-adf7-440a-9f08-a111d5e187c9)
 # Key Points
 ## Chapter 1
-- 1.1 - The Central theme of this is to learn how to solve problems by writing a program
-- 1.2 - A Computer is an Electric device that stores and process data
-- 1.3 - Computer programs, known as Software, are instructors that tell a computer what to do
-- 1.4 - The Operating System (OS) is the most important program that runs on a computer. The OS manages and controls a computer activities
-- 1.5 - Java is a powerful and versatile programming language for developing software running on mobile devices, desktop computers, and servers
-- 1.6 - Java Syntax is defined in the java language specification, and the Java library is defined inthe Java application program interface (API). The JDK is the software for compiling and running java programs. An IDE in integrated development environment for rapidly developing programs.
-- 1.7 - A Java Program is executed from thr ```main``` method in the class
-- 1.8 - You save a Java program in a ```.java``` file and compile it in a ```.class``` file. the ```.class``` file is executed by the Java Virtual Machine (JVM)
-- 1.9 - Good Programming Style and paper documentation make a program easy to read and helkp prorammers prevent errors
-- 1.10 - Programming errors can be categorized into 3 types: _syntax, runtime, and logic errors_
+- [1.1](https://github.com/aalons012/Java-notes/blob/main/Andy's%20Notes.md#ii---introduction) - The Central theme of this is to learn how to solve problems by writing a program
+- [1.2](https://github.com/aalons012/Java-notes/blob/main/Andy's%20Notes.md#iii---what-is-a-computer) - A Computer is an Electric device that stores and process data
+- [1.3](https://github.com/aalons012/Java-notes/blob/main/Andy's%20Notes.md#iiii---programming-languages) - Computer programs, known as Software, are instructors that tell a computer what to do
+- [1.4](https://github.com/aalons012/Java-notes/blob/main/Andy's%20Notes.md#iiv---operating-systems) - The Operating System (OS) is the most important program that runs on a computer. The OS manages and controls a computer activities
+- [1.5](https://github.com/aalons012/Java-notes/blob/main/Andy's%20Notes.md#iv---java-the-world-wide-web-and-beyond) - Java is a powerful and versatile programming language for developing software running on mobile devices, desktop computers, and servers
+- [1.6](https://github.com/aalons012/Java-notes/blob/main/Andy's%20Notes.md#ivi---the-java-language-specifications-api-jdk-jre--ide) - Java Syntax is defined in the java language specification, and the Java library is defined inthe Java application program interface (API). The JDK is the software for compiling and running java programs. An IDE in integrated development environment for rapidly developing programs.
+- [1.7](https://github.com/aalons012/Java-notes/blob/main/Andy's%20Notes.md#ivii---a-simple-java-program) - A Java Program is executed from thr ```main``` method in the class
+- [1.8](https://github.com/aalons012/Java-notes/blob/main/Andy's%20Notes.md#iviii-creating-compiling-and-executing-a-java-program) - You save a Java program in a ```.java``` file and compile it in a ```.class``` file. the ```.class``` file is executed by the Java Virtual Machine (JVM)
+- [1.9](https://github.com/aalons012/Java-notes/blob/main/Andy's%20Notes.md#iix---programming-style-and-documentation) - Good Programming Style and paper documentation make a program easy to read and helkp prorammers prevent errors
+- [1.10](https://github.com/aalons012/Java-notes/blob/main/Andy's%20Notes.md#ix---programming-errors) - Programming errors can be categorized into 3 types: _syntax, runtime, and logic errors_
 ## Chapter 2
 - 
 ## Chapter 3
