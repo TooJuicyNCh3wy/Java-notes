@@ -408,3 +408,112 @@ This is a no-arg constructor that makes the variables from ```Loan``` with defau
 - 1000 for the default loan amount, for ```double``` only because if someone decides to add a decimal point on the loan amount
 
 and by using ```this```, it refers to the current object, ```Loan```, in a method or constructor
+```
+  public Loan(double annualInterestRate, int numberOfYears, double loanAmount) {
+    this.annualInterestRate = annualInterestRate;
+    this.numberOfYears = numberOfYears;
+    this.loanAmount = loanAmount;
+    loanDate = new java.util.Date();
+  }
+```
+this right here is the Main Constructor having the public with the class, being ```Loan``` with the parameters that are under ```TestLoanClass.java```, which will then initialize those parameters to initialize the corresponding fields. Also, sets ```loanDate``` to current date and time.
+```
+public double getAnnualInterestRate() {
+    return annualInterestRate;
+  }
+
+  public void setAnnualInterestRate(double annualInterestRate) {
+    this.annualInterestRate = annualInterestRate;
+  }
+
+  public int getNumberOfYears() {
+    return numberOfYears;
+  }
+
+  public void setNumberOfYears(int numberOfYears){
+    this.numberOfYears = numberOfYears;
+  }
+
+  public Double getLoanAmount() {
+    return loanAmount;
+  }
+
+  public void setLoanAmount(double loanAmount){
+    this.loanAmount = loanAmount;
+  }
+```
+Provides getter and setter methods for each field, allowing controlled access and modification of these fields from outside the class. This encapsulation protects the integrity of the data.
+```
+public double getMonthlyPayment(){
+    double monthlyInterestRate = annualInterestRate / 1200;
+    double monthlyPayment = loanAmount * monthlyInterestRate / (1 - (1 / Math.pow(1 + monthlyInterestRate, numberOfYears * 12)));
+    return monthlyPayment;
+  }
+```
+Calculates the monthly payment using the formula for amortizing a loan based on the compound interest rate formula. The interest rate is divided by 1200 to convert from an annual percentage to a monthly fraction.
+```
+public double getTotalPayment() {
+    double totalPayment = getMonthlyPayment() * numberOfYears * 12;
+    return totalPayment;
+  }
+```
+Computes the total payment over the life of the loan by multiplying the monthly payment by the total number of payments (12 months times the number of years).
+```
+  public java.util.Date getLoanDate() {
+    return loanDate;
+  }
+```
+Provides a method to retrieve the date when the loan was created.
+This class is a typical example of a well-encapsulated Java class that defines a specific business entity, in this case, a loan. It uses private fields to protect its data and public methods to provide controlled access and functionality based on that data.
+
+-------------------------
+And after all this 
+
+FINALLY
+
+you can now run it
+
+lets run it shall we
+
+for this example well use the following
+- 3 for interest rate
+- 3 for years
+- 20,000 for the amount
+
+this is the result
+```
+Enter your annual interest rate: 3
+Enter the number of years AS A WHOLE NUMBER (Integer): 3
+How much would you like for the loan:20000
+The loan was created on Wed Oct 02 14:39:09 EDT 2024
+The monthly payment is 581.62
+The total payment is 20938.47
+```
+WOOOOWWWWW
+
+-----------------------------------
+now
+from a class developer's perspective
+- a class is designed for use by many different customers
+
+In order to make a class useful in a wide range of applications
+- it should provide a variety of ways for customization through...
+  - constructors
+  - properties
+  - methods
+
+The ```loan``` class contains 2 constructors
+- 4 getters
+- 3 setters
+- The methods for finding the monthly payment and the total payment
+
+-------------------------------------------------
+#### Important Pedagogical Tip
+Use the UML diagram for the Loan class shown in **10.2** to write a test program that uses the ```Loan``` class even though you don’t know how the ```Loan``` class is implemented. This has three benefits:
+- It demonstrates that developing a class and using a class are two separate tasks.
+- It enables you to skip the complex implementation of certain classes without interrupting the sequence of this book.
+- It is easier to learn how to implement a class if you are familiar with it by using the class.
+
+For all the class examples from now on, create an object from the class and try using its methods before turning your attention to its implementation
+
+----------------------------------
