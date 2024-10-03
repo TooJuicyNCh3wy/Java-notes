@@ -17,6 +17,7 @@ If you cant see ANY of Source Codes...Or read them...[Click on me](https://githu
 ## Chapter 10
 - The focus of this chapter is on class design and to explore the differences between procedural programming and object-oriented programming
 - [10.2](https://github.com/aalons012/Java-notes/blob/main/Andy's%20Notes.md#xii---class-abstraction-and-encapsulation) - Class Abstraction is seperation of class implementation from the use of a class. the details of implementation from the use of a class. The details of implementation are encapsulated and hidden from the user. This is known as class encapsuation
+- [10.3]()
 
 # Chapter I - Intro to Computers, Programs & Java
 [W3 Schools](https://github.com/aalons012/Java-notes/blob/main/W3%20Schools/1%20-%20Java%20Tutorial/02%20-%20Intro.md)
@@ -511,9 +512,10 @@ The ```loan``` class contains 2 constructors
 #### Important Pedagogical Tip
 Use the UML diagram for the Loan class shown in **10.2** to write a test program that uses the ```Loan``` class even though you don’t know how the ```Loan``` class is implemented. This has three benefits:
 - It demonstrates that developing a class and using a class are two separate tasks.
-- It enables you to skip the complex implementation of certain classes without interrupting the sequence of this book.
+- It enables you to skip the complex implementation of certain classes without interrupting the sequence of this book.
 - It is easier to learn how to implement a class if you are familiar with it by using the class.
 
 For all the class examples from now on, create an object from the class and try using its methods before turning your attention to its implementation
 
 ----------------------------------
+## X.III - Thinking in Objects
