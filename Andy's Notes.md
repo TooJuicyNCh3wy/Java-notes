@@ -81,8 +81,6 @@ It comes in 3 Editions
 - ME
   - Micro Edition
     - to develop applications for mobile devices
-
-----------------------------------------------------------------
 ## I.VII - A Simple ```.java``` Program
 
 - [Java Full Course for free ☕ - Youtube](https://github.com/aalons012/Java-notes/blob/main/Java%20Full%20Course%20for%20free%20%E2%98%95%20-%20Youtube/01%20-%20Java%20-%20Tutorial%20%26%20Basic%20Inputs.md)
