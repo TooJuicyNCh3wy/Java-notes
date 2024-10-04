@@ -1075,7 +1075,7 @@ NOTE THIS
 -------
 **NOTE** - ```BigDecimal(String)``` vs ```BigDecimal(Double)```
 
-You can create a ```BigDecimal``` using either ```new BigDecimal(String)``` or ```new BigDecimal(double)```. Since a double value is approximated, so the result from ```new BigDecimal(double)``` is unpredictable. For example, ```new BigDecimal("1.0")``` is not ```1.0```, but is actually ```0.1000000000000000055511151231257827021181583404541015625```. Therefore, it is a good idea to use ```new BigDecimal(String)``` to obtain a predictable ```BigDecimal```.
+You can create a ```BigDecimal``` using either ```new BigDecimal(String)``` or ```new BigDecimal(double)```. Since a double value is approximated, so the result from ```new BigDecimal(double)``` is unpredictable. For example, ```new BigDecimal("1.0")``` is not ```1.0```, but is actually ```0.1000000000000000055511151231257827021181583404541015625```. Therefore, it is a good idea to use ```new BigDecimal(String)``` to obtain a predictable ```BigDecimal```.
 
 -------------------------------------
 ### ```LargeFactorial.java```
