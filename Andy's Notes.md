@@ -30,7 +30,7 @@ If you cant see ANY of Source Codes...Or read them...[Click on me](https://githu
 - [10.7](https://github.com/aalons012/Java-notes/blob/main/Andy's%20Notes.md#xvii---processing-primitive-data-type-values-as-objects) - A primitive-type is not an object, but it can be wrapped in an object using a wrapper class in the Java API
 - [10.8](https://github.com/aalons012/Java-notes/blob/main/Andy's%20Notes.md#xviii---automatic-conversion-between-primitive-types-and-wrapper-class-types) - A Primitive type value can be automatically converted to an object using a wrapper class, and vice versa, depending the context
 - [10.9](https://github.com/aalons012/Java-notes/blob/main/Andy's%20Notes.md#xix---the-biginteger-and-bigdecimal-classes) - The ```BigInteger``` and ```BigDecimal``` classes can be used to represent integers or decimal numbers of any size and precision
-- [10.10]()
+- [10.10](https://github.com/aalons012/Java-notes/blob/main/Andy's%20Notes.md#xx---the-string-class) - A ```String``` object is immutable; its contents cannot be changed once the string is created
 - [10.11]()
 # Chapter I - Intro to Computers, Programs & Java
 Trust me no one needs to understand this unless like if you really wanna know heres a summary 
@@ -1086,3 +1086,277 @@ You can create a ```BigDecimal``` using either ```new BigDecimal(String)``` or `
 
 ---------------------------------
 ## X.X - The String Class
+Strings were Introdued in **IV.IV**
+- by now you should know that strings are objects.
+
+You can invoke the ```charAt(index)``` Method to obtain a character at the specified index from a string
+
+The ```length()``` method to return the size of a string
+
+The ```indexOf``` and ```lastindexOf``` methods to return the first or last last index of a matching character or a substring
+
+The ```equals``` and ```compareTo``` methods to compare two strings
+
+&
+
+The ```trim()``` method to trim whitespace characters from the two ends of a string
+
+&
+
+The ```toLowerCase()``` and ```toUpperCase()```  methods to return the lowercase and uppercase from a string.
+
+The ```String``` class has **13 Constructors and more than 40 methods** for manipulating strings
+
+Not only is that useful in programming
+- its a good example for learning classes and objects.
+
+You can createa string object from a string literal or from an array of characters.
+- to create a string from a string literal, **USE THIS**
+```
+String newString = new String(stringLiteral);
+```
+> The argument stringLiteral is a sequence of characters enclosed in double quotes
+
+The following statement creates a String object message for the string literal "Welcome to Java":
+```
+String message = new String("Welcome to Java");
+```
+Java treats a string literal as a ```String``` object. Thus, the following statement is valid:
+```
+String message = "Welcome to Java";
+```
+You can also create a string from an array of characters. LIKE the code below create the String "Good Day":
+```
+char[] = charArray = {'G', 'o', 'o', 'd', ' ', 'D', 'a', 'y'};
+String message = new String(charArray);
+```
+---------------------------------
+**NOTE** - ```String``` Variable, ```String``` object, & ```String``` value
+
+A String variable holds a reference to a String object that stores a string value. Strictly speaking, the terms String variable, String object, and string value are different, but most of the time the distinctions between them can be ignored. For simplicity, the term string will often be used to refer to String variable, String object, and string value
+
+----------------------------
+### X.X.I - Immutuable Strings and Interned Strings
+A ```String``` object is immutable
+- its contents CANNOT be changed
+
+so uhhh
+
+does this code change the contents of the String?
+```
+String s = "Java";
+s = "HTML";
+```
+i swear if you said yes
+
+...
+
+NO!!!!!!!!!!
+
+It cannot be changed
+
+Why??
+- The first statement creates a String object with the content "Java" and assigns its reference to s. 
+- The second statement creates a new String object with the content "HTML" and assigns its reference to s.
+- The first String object still exists after the assignment, but it can no longer be accessed, because variable s now points to the new object.
+
+do you need a picture this too...fine look at 10.5 (Image Below ↓↓↓)
+
+------------------------------
+10.5 - Strings are immutable; once created, their contents cannot be changed
+![image](https://github.com/user-attachments/assets/04b54b14-e5d1-4c10-9178-c1e716df0b20)
+
+------------------------------------
+Because strings are immutable and are ubiquitous in programming
+- the JVM uses a unique instance for string literals with the same character sequence in order to improve efficiency and save memory.
+  - Such an instance is called an interned string.
+  
+For example, the following statements:
+![image](https://github.com/user-attachments/assets/1f80530f-2604-4f8d-b45f-c7fe4aa55b68)
+```
+OUTPUT:
+
+s1 == s2 is false
+s1 == s3 is true
+s2 == s4 is false
+```
+In the preceding statements, ```s1``` and ```s3``` refer to the same interned string—```"Welcome to Java"```—so ```s1 == s3``` is ```true```. However, ```s1 == s2``` is ```false```, because ```s1``` and ```s2``` are two different string objects, even though they have the same contents. ``` S2 == s4``` is also false, because ```s2``` and ```s4``` are two different string objects. 
+
+-----------------------------------
+**TIP**
+
+You can create a ```String``` using new ```String(stringLiteral)```. However, this is inefficient because it creates an unnecessary object. You should always simply use the ```stringLiteral```. For example, use ```String s = stringLiteral```; rather than ```String s = new String(stringLiteral)```;
+
+-------------------------------
+### X.X.II - Replacing And Splitting Strings
+The ```String``` class provides the methods for replacing and splitting Strings, as shown in 10.16
+
+-----------------------------------
+10.16 - The ```String``` class contains the methods for replacing and splitting strings.
+
+![image](https://github.com/user-attachments/assets/0cc70051-1263-48f7-b0d1-c4aa0656a39a)
+
+-------------------------------------
+Once a String is created
+- IT CANNOT BE CHANGED
+
+Methods
+- ```replace```
+- ```replaceFirst```
+- ```replaceAll```
+
+These 3 return a new string derived from the original string 
+- WITHOUT CHANGING THE ORIGINAL STRING!
+
+There are several versions of the ```replace``` methods are provided to replace a character or a substring in the string with a new character or a new substring
+
+EXAMPLE
+```
+"Welcome".replace('e', 'A') returns a new string, WAlcomA.
+"Welcome".replaceFirst("e", "AB") returns a new string, WABlcome.
+"Welcome".replace("e", "AB") returns a new string, WABlcomAB.
+"Welcome".replace("el", "AB") returns a new string, WABcome.
+"Welcome".replaceAll("e", "AB") returns a new string, WABlcomAB.
+```
+> Note that ```replaceAll(oldStr, newStr)``` is the same as ```replace(oldStr, newStr) ``` when used to replace all oldStr with newStr.
+
+The ```Split``` method
+- can be used to ectract tokens from a string with the specified delimiters
+
+Like this code right Below ↓↓↓
+```
+String[] tokens = "Java#HTML#Perl".split("#");
+for (int i = 0; i < tokens.length; i++)
+ System.out.print(tokens[i] + " ");
+
+OUTPUT:
+
+Java HTML Perl
+```
+--------------------------------
+### X.X.III - Matching, Replacing, And Spittling by Patterns
+Often you will need to write code that validates user input
+- How do you write this type of code?
+  - A simple and effective way to accomplish this task is to use the regular expression
+ 
+Regular Expression
+- a string that describes a pattern for matching a set of strings.
+
+You can...
+- match
+- replace
+- split
+
+... a string by specifying a pattern. This is an extremely useful and powerful feature
+
+soo
+
+Lets start withthe matches method in the String class. At first glance, the matches
+method is very similar to the equals method. For example, the following two statements both evaluate to true
+```
+"Java".matches("Java");
+"Java".equals("Java");
+```
+However, the matches method is more powerful. It can match not only a fixed string, but 
+also a set of strings that follow a pattern. For example, the following statements all evaluate to true:
+```
+"Java is fun".matches("Java.*")
+"Java is cool".matches("Java.*")
+"Java is powerful".matches("Java.*")
+```
+Java.* in the preceding statements is a regular expression. It describes a string pattern that begins with Java followed by any zero or more characters. Here, the substring matches any zero or more characters.
+- The following statement evaluates to true:
+```
+"440–02–4534".matches("\\d{3}–\\d{2}–\\d{4}")
+```
+Here, \\d represents a single digit, and \\d{3} represents three digits.
+The replaceAll, replaceFirst, and split methods can be used with a regular 
+expression. 
+
+For example, the following statement returns a new string that replaces $, +, or #
+in a+b$#c with the string NNN.
+```
+String s = "a+b$#c".replaceAll("[$+#]", "NNN");
+System.out.println(s);
+```
+Here, the regular expression [$+#] specifies a pattern that matches $, +, or #. Thus, the output is aNNNbNNNNNNc.
+- The following statement splits the string into an array of strings delimited by punctuation marks.
+```
+String[] tokens = "Java,C?C#,C++".split("[.,:;?]");
+for (int i = 0; i < tokens.length; i++)
+ System.out.println(tokens[i]);
+```
+In this example, the regular expression [.,:;?] specifies a pattern that matches ., ,, :, ;, or ?. Each of these characters is a delimiter for splitting the string. Thus, the string is split into Java, C, C#, and C++, which are stored in array tokens.
+Regular expression patterns are complex for beginning students to understand. For this reason, simple patterns are introduced in this section. Please refer to Appendix H, Regular Expressions, to learn more about these patterns.
+
+------------------
+### X.X.IV - Conversion between Strings and Arrays
+Strings are not arrays, but a string can be converted into an array and vice versa. To convert a string into an array of characters, use the toCharArray method. 
+
+For example, the following statement converts the string Java to an array:
+```
+char[] chars = "Java".toCharArray();
+```
+Thus, chars[0] is J, chars[1] is a, chars[2] is v, and chars[3] is a.
+
+You can also use the getChars(int srcBegin, int srcEnd, char[] dst, int dstBegin) method to copy a substring of the string from index srcBegin to index srcEnd–1 into a character array dst starting from index dstBegin. 
+
+For example, the following code copies a substring "3720" in "CS3720" from index 2 to index 6–1 into the character array dst starting from index 4:
+```
+char[] dst = {'J', 'A', 'V', 'A', '1', '3', '0', '1'};
+"CS3720".getChars(2, 6, dst, 4);
+```
+Thus, dst becomes {'J', 'A', 'V', 'A', '3', '7', '2', '0'}.
+
+To convert an array of characters into a string, use the String(char[]) constructor or the valueOf(char[]) method. 
+
+For example, the following statement constructs a string from an array using the String constructor:
+```
+String str = new String(new char[]{'J', 'a', 'v', 'a'});
+```
+The next statement constructs a string from an array using the valueOf method.
+```
+String str = String.valueOf(new char[]{'J', 'a', 'v', 'a'});
+```
+---------------------
+### X.X.V - Converting Characters and Numeric Values to Strings
+Recall that you can use Double.parseDouble(str) or Integer.parseInt(str) to convert a string to a double value or an int value, and you can convert a character or a number into a string by using the string concatenating operator. Another way of converting a number into a string is to use the overloaded static valueOf method.
+
+This method can also be used to convert a character or an array of characters into a string, as shown in Figure 10.17.
+
+---------------------------------
+10.17 - The String class contains the static methods for creating strings from primitive-type values
+![image](https://github.com/user-attachments/assets/79dd02ea-837f-4916-aeda-48496c75a57a)
+> For example, to convert a double value 5.44 to a string, use String.valueOf(5.44). The return value is a string consisting of the characters '5', '.', '4', and '4'.
+
+----------------------------------
+### X.X.VI - Formatting Stage
+The String class contains the static format method to return a formatted string. The syntax to invoke this method is
+```
+String.format(format, item1, item2, ..., itemk);
+```
+This method is similar to the printf method except that the format method returns a formatted string, whereas the printf method displays a formatted string. 
+
+For example,
+```
+String s = String.format("%7.2f%6d%-4s", 45.556, 14, "AB");
+System.out.println(s)
+```
+displays:
+![image](https://github.com/user-attachments/assets/8118ad8d-d6d4-4bfa-9bee-31885c1321f3)
+
+where the square box ![image](https://github.com/user-attachments/assets/16378491-8b75-43ac-84b1-c1e66692e6fd)
+ denotes a blank space.
+
+------------------------------------------
+**Note**
+```
+System.out.printf(format, item1, item2, ..., itemk);
+```
+is equivalent to
+```
+System.out.print(
+ String.format(format, item1, item2, ..., itemk));
+```
+----------------------------
+## X.XI - The StringBuilder and StingBufferClasses
