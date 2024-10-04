@@ -26,9 +26,12 @@ If you cant see ANY of Source Codes...Or read them...[Click on me](https://githu
 - [10.2](https://github.com/aalons012/Java-notes/blob/main/Andy's%20Notes.md#xii---class-abstraction-and-encapsulation) - Class Abstraction is seperation of class implementation from the use of a class. the details of implementation from the use of a class. The details of implementation are encapsulated and hidden from the user. This is known as class encapsuation
 - [10.3](https://github.com/aalons012/Java-notes/blob/main/Andy's%20Notes.md#xiii---thinking-in-objects) - The procedural paradigm focuses on designing methods. The object-oriented paradigm couples data and methods together into objects. Software design using the object-oriented paradigm focuses on objects and operations on objects.
 - [10.4](https://github.com/aalons012/Java-notes/blob/main/Andy's%20Notes.md#xiv---class-relationships) - To design Classes, you need to explore the relationships among classes. The common relationships among classes are association, aggregation, composition, and inheritance
-- [10.5]()
-- [10.6]()
-- 
+- [10.5 & 10.6](https://github.com/aalons012/Java-notes/blob/main/Andy's%20Notes.md#xv--vi-case-studies) - Case Studies
+- [10.7](https://github.com/aalons012/Java-notes/blob/main/Andy's%20Notes.md#xvii---processing-primitive-data-type-values-as-objects) - A primitive-type is not an object, but it can be wrapped in an object using a wrapper class in the Java API
+- [10.8]()
+- [10.9]()
+- [10.10]()
+- [10.11]()
 # Chapter I - Intro to Computers, Programs & Java
 Trust me no one needs to understand this unless like if you really wanna know heres a summary 
 
@@ -818,3 +821,179 @@ The StackOfIntegers class is implemented in Listing 10.8. The methods empty(), p
 
 -------------------------
 ## X.VII - Processing Primitive Data Type Values as Objects
+> (At this point im just copying straight from the book)
+
+Owing to perfomance considerations
+- Primitive data type values are not objects in Java
+  - Because of the overhead of processing objects, the language's performance would be adversely affected IF the primitive data type values were treated as objects
+- However
+  - many Java methods require the use of objects as arguments
+
+
+Java offers a convinient way to incorporate, or wrap, a primative data type value to an object
+
+Example - Wrapping an..
+- ```int``` into an ```Integer``` object
+- ```double``` into an ```Double``` object
+- ```char``` into an ```Character``` object
+
+By using a wrapper class.
+- you can process data types values as objects
+
+Java provides
+- ```Boolean```
+  - The ```Boolean``` class wraps a Boolean value ```true``` or ```false```
+- ```Charcter```
+- ```Double```
+- ```Float```
+- ```Byte```
+- ```Short```
+- ```Integer```
+- ```Long```
+
+All these wrapper classes can be done in the ```java.lang``` package for primitive data types
+
+---------------------
+**NOTE** - Naming Convention
+
+Most wrapper class names for a primitive type are the same as the primitive data type name with the first letter capitalized. The exceptions are 
+- ```Integer``` for ```int```
+- ```Character``` for ```char```.
+
+---------------------------------
+Numeric wrapper classes are very similar to each other. Each contains the methods 
+- ```doubleValue()```
+- ```floatValue()```
+- ```intValue()```
+- ```shortValue()```
+- ```byteValue()```
+  - all these methods "CONVERT" objects into primitive-type values
+
+You can construct a wrapper either from a data type value or from a string representing the numeric value
+
+Like these Examples
+```
+Double.valueOF(5.0), Double.valueOf("5.0"), Integer.valueOf(5), & Integer.valueOf("5")
+```
+Wrapper class **DO NOT** have no-arg constructors
+- The Instance of **ALL** wrapper classes are immutable
+  - Meaning...
+    - once the objects are created, **THE INTERNAL VALUES CANNOT BE CHANGED**
+> The constructors in the wrapper classes are deprecated in Java 9. You should use the static ```valueOf``` method to create an instance. Java enables frequently used wrapper objects to be reused through the ```valueOf``` method. An instance created using ```valueOf``` maybe shared, which is fine because the wrapper objects are immutable.
+
+Example, from the following code below,
+- ```x1 and x2``` are different objects, but ```x3 and x4``` are the same objects created using the ```valueOf``` method. Note that Integer ```x5 = 32```, is same as ```Integer x5 = Integer.valueOf(32)```.
+```
+Integer x1 = new Integer(“32”);
+Integer x2 = new Integer(“32”);
+Integer x3 = Integer.valueOf(“32”);
+Integer x4 = Integer.valueOf(“32”);
+Integer x5 = 32; 
+System.out.println(“x1 == x2 is” + (x1 == x2)); // Display false
+System.out.println(“x1 == x3 is” + (x1 == x3)); // Display false
+System.out.println(“x3 == x4 is” + (x3 == x4)); // Display true
+System.out.println(“x3 == x5 is” + (x3 == x5)); // Display true
+```
+Note that the “frequently used wrapper objects are reused” in Java.
+>  Which ones are frequently used are not well defined in Java. In JDK 11, the frequently used wrapper objects are the byte-size integers between −128 and 12 7.
+
+Example, from the following code below,
+- ```x1 and x2``` are not the same, although their ```int``` values are the same. However, it is preferred to use the ```valueOf``` method to create instances.
+```
+Integer x1 = Integer.valueOf("128");
+Integer x2 = Integer.valueOf("128");
+System.out.println("x1 == x2 is " + (x1 == x2)); // Display false
+```
+-------------------
+Constants
+
+Each numeric wrapper class has the constants MAX_VALUE and MIN_VALUE. MAX_VALUE represents the maximum value of the corresponding primitive data type. For Byte, Short, Integer, and Long, MIN_VALUE represents the minimum byte, short, int, and long values. Float and Double, MIN_VALUE represents the minimum positive float and double values.
+- The following statements display the maximum integer (2,147,483,647), the minimum positive float (1.4E–45), and the maximum double floating-point number (1.79769313486231570e + 308d):
+```
+System.out.println("The maximum integer is " + Integer.MAX_VALUE);
+System.out.println("The minimum positive float is " +
+ Float.MIN_VALUE);
+System.out.println("The maximum double-precision floating-point number is " + Double.MAX_VALUE);
+```
+-----------------------
+Conversion methods
+
+Each numeric wrapper class contains the methods doubleValue(), floatValue(), intValue(), longValue(), and shortValue() for returning a double, float, int, long, or short value for the wrapper object.
+
+EXAMPLE
+```
+Double.valueOf(12.4).intValue() returns 12;
+Integer.valueOf(12).doubleValue() returns 12.0;
+```
+---------------
+```compareTo``` Method
+
+Recall the String class contains the compareTo method for comparing two strings. The numeric wrapper classes contain the compareTo method for comparing two numbers and returns 1, 0, or –1, if this number is greater than, equal to, or less than the other number.
+
+For Example,
+```
+Double.valueOf(12.4).compareTo(Double.valueOf(12.3)) returns 1;
+Double.valueOf(12.3).compareTo(Double.valueOf(12.3)) returns 0;
+Double.valueOf(12.3).compareTo(Double.valueOf(12.51)) returns –1;
+```
+------------------
+Static ```valueOf``` mathods
+
+The numeric wrapper classes have a useful static method, valueOf(String s). This method creates a new object initialized to the value represented by the specified string. 
+
+For Example,
+```
+Double doubleObject = Double.valueOf("12.4");
+Integer integerObject = Integer.valueOf("12");
+```
+------------------------
+static parsing methods
+
+You have used the parseInt method in the Integer class to parse a numeric string into an int value and the parseDouble method in the Double class to parse a numeric string into a double value. Each numeric wrapper class has two overloaded parsing methods to parse a numeric string into an appropriate numeric value based on 10 (decimal) or any specified radix 
+
+(e.g., 2 for binary, 8 for octal, and 16 for hexadecimal).
+```
+// These two methods are in the Byte class
+public static byte parseByte(String s)
+public static byte parseByte(String s, int radix)
+
+// These two methods are in the Short class
+public static short parseShort(String s)
+public static short parseShort(String s, int radix)
+
+// These two methods are in the Integer class
+public static int parseInt(String s)
+public static int parseInt(String s, int radix)
+
+// These two methods are in the Long class
+public static long parseLong(String s)
+public static long parseLong(String s, int radix)
+
+// These two methods are in the Float class
+public static float parseFloat(String s)
+public static float parseFloat(String s, int radix)
+
+// These two methods are in the Double class
+public static double parseDouble(String s)
+public static double parseDouble(String s, int radix)
+```
+For Example
+```
+Integer.parseInt("11", 2) returns 3;
+Integer.parseInt("12", 8) returns 10;
+Integer.parseInt("13", 10) returns 13;
+Integer.parseInt("1A", 16) returns 26;
+```
+Integer.parseInt("12", 2) would raise a runtime exception because 12 is not a binary number
+
+----------------
+Converting decimal to hex
+
+Note you can convert a decimal number into a hex number using the format method
+
+For Example
+```
+String.format("%x", 26) returns 1A;
+```
+------------------------------------
+## X.VIII - Automatic Conversion between Primitive Types and Wrapper Class Types
