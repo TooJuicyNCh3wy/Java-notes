@@ -567,3 +567,4 @@ Assume that the ```BMI``` class is available. ```UseBMIClass.java``` gives a tes
 
 -------
 ## ```UseBMIClass.java```
+![image](https://github.com/user-attachments/assets/e1e8ba4c-921c-4b13-bed1-85e2f730d2f2)
