@@ -566,5 +566,20 @@ Since they are tied to individual objects, they should be stored instance data f
 Assume that the ```BMI``` class is available. ```UseBMIClass.java``` gives a test program that uses this class
 
 -------
-## ```UseBMIClass.java```
+### ```UseBMIClass.java```
 ![image](https://github.com/user-attachments/assets/e1e8ba4c-921c-4b13-bed1-85e2f730d2f2)
+
+Line 3 creates the object for the person "Kim Yang"
+
+Line 7 creates the object for the perosn "Susan King"
+
+and then below creating the objects you get to see the instance methods like ```.get name()```,```.getBMI()```, and ```getStatus()``` to return the BMI's Infromation in both objects
+
+ANNNNDDDDDDDD ```BMI.java``` class can be implemented...dont believe me? look at the program below
+
+-------------------------------------
+## ```BMI.java```
+> THIS IS HOW I CODE SORRY IF IT LOOKS CONFUSING
+> and sorry for being too zoomed out if you cant see [look here]()
+
+![image](https://github.com/user-attachments/assets/5936f3f8-d5ad-4972-9ada-e3dba97a6377)
