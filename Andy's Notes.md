@@ -747,7 +747,7 @@ Since aggregation and composition relationships are represented using classes in
 
 ----------------------
 ## X.V & VI Case Studies
-### X.v - Designing the Course Class
+### X.V - Designing the Course Class
 This section designs a class for modeling courses.
 
 > This book’s philosophy is teaching by example and learning by doing. The book provides a wide variety of examples to demonstrate object-oriented programming. This section and the next offer additional examples on designing classes.
@@ -817,4 +817,4 @@ The StackOfIntegers class is implemented in Listing 10.8. The methods empty(), p
 ![image](https://github.com/user-attachments/assets/b1074136-ebec-4811-8f53-768886ed5996)
 
 -------------------------
-## X.VII 
+## X.VII - Processing Primitive Data Type Values as Objects
