@@ -29,7 +29,7 @@ If you cant see ANY of Source Codes...Or read them...[Click on me](https://githu
 - [10.5 & 10.6](https://github.com/aalons012/Java-notes/blob/main/Andy's%20Notes.md#xv--vi-case-studies) - Case Studies
 - [10.7](https://github.com/aalons012/Java-notes/blob/main/Andy's%20Notes.md#xvii---processing-primitive-data-type-values-as-objects) - A primitive-type is not an object, but it can be wrapped in an object using a wrapper class in the Java API
 - [10.8](https://github.com/aalons012/Java-notes/blob/main/Andy's%20Notes.md#xviii---automatic-conversion-between-primitive-types-and-wrapper-class-types) - A Primitive type value can be automatically converted to an object using a wrapper class, and vice versa, depending the context
-- [10.9]()
+- [10.9](https://github.com/aalons012/Java-notes/blob/main/Andy's%20Notes.md#xix---the-biginteger-and-bigdecimal-classes) - The ```BigInteger``` and ```BigDecimal``` classes can be used to represent integers or decimal numbers of any size and precision
 - [10.10]()
 - [10.11]()
 # Chapter I - Intro to Computers, Programs & Java
@@ -1020,3 +1020,69 @@ In line 1, the primitive values 1, 2, and 3 are automatically boxed into objects
 
 ------------------------
 ## X.IX - The BigInteger and BigDecimal Classes
+
+By any chance if you need to compute a B I G number, oh, sorry, Integers, or high-precision floating point-values, you can use these 2 classes in the ```java.Math``` package
+- ```BigInteger```
+- ```BigDecimal```
+  - THEY ARE BOTH IMMUTUABLE
+ 
+Just a reminder
+- the largest integer of the ```Long``` type is ```Long.MAX_VALUE``` (i.e., 9223372036854775807)
+
+An instance of ```BigInteger```
+- can represent an integer of **ANY** size LIKE
+  - ```new BigInteger(String)```
+  - ```BigInteger.valueOf(long)```
+ 
+And Same goes to ```BigDecimal``` (it can be either or)
+- new BigDecimal(String)
+- BigDecimal.valueOf(double)
+
+use the add, subtract, multiply, divide, and remainder methods to perform arithmetic operations, and use the compareTo method to compare two big numbers.
+
+Like this code below ↓↓↓
+```
+BigInteger a = new BigInteger("9223372036854775807");
+BigInteger b = new BigInteger("2");
+BigInteger c = a.multiply(b); // 9223372036854775807 * 2
+System.out.println(c);
+
+OUTPUT:
+ 18446744073709551614
+```
+There is no Limit to the precision of a ```BigDecimal``` object
+- the ```divide``` method may throw an ```artithmeticException```if the result cannot be determined.
+- however,
+  - youcan use the overloaded ```divide(BigDecimal d, int scale, RoundingMode roundingMode)``` method to specify a scale and a rounding mode to avoid this exception
+    - where ```scale``` is the maximum number of digits after the decimal point
+
+Example, the following code below  creates two BigDecimal objects and performs division with scale 20 and rounding mode RoundingMode.HALF_UP:
+```
+BigDecimal a = new BigDecimal("1.0");
+BigDecimal b = new BigDecimal("3");
+BigDecimal c = a.divide(b, 20, RoundingMode.HALF_UP);
+System.out.println(c);
+
+Output is 0.33333333333333333333333333334
+```
+Note the factorial of an integer can be very large. ```LargeFactprial.java``` gives a method that can return 
+the factorial of any integer.
+
+BUT BEFORE LOOKING AT THE CODE
+
+NOTE THIS
+
+-------
+**NOTE** - ```BigDecimal(String)``` vs ```BigDecimal(Double)```
+
+You can create a ```BigDecimal``` using either ```new BigDecimal(String)``` or ```new BigDecimal(double)```. Since a double value is approximated, so the result from ```new BigDecimal(double)``` is unpredictable. For example, ```new BigDecimal("1.0")``` is not ```1.0```, but is actually ```0.1000000000000000055511151231257827021181583404541015625```. Therefore, it is a good idea to use ```new BigDecimal(String)``` to obtain a predictable ```BigDecimal```.
+
+-------------------------------------
+### ```LargeFactorial.java```
+
+![image](https://github.com/user-attachments/assets/5ad2613e-ba47-423b-93b1-6b035cd39532)
+> ```BigInteger.ONE``` is a constant defined in the ```BigInteger``` class. ```BigInteger.ONE``` is the same as new ```BigInteger("1")```.
+> A new result is obtained by invoking the multiply method.
+
+---------------------------------
+## X.X - The String Class
