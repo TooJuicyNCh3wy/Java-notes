@@ -31,7 +31,10 @@ If you cant see ANY of Source Codes...Or read them...[Click on me](https://githu
 - [10.8](https://github.com/aalons012/Java-notes/blob/main/Andy's%20Notes.md#xviii---automatic-conversion-between-primitive-types-and-wrapper-class-types) - A Primitive type value can be automatically converted to an object using a wrapper class, and vice versa, depending the context
 - [10.9](https://github.com/aalons012/Java-notes/blob/main/Andy's%20Notes.md#xix---the-biginteger-and-bigdecimal-classes) - The ```BigInteger``` and ```BigDecimal``` classes can be used to represent integers or decimal numbers of any size and precision
 - [10.10](https://github.com/aalons012/Java-notes/blob/main/Andy's%20Notes.md#xx---the-string-class) - A ```String``` object is immutable; its contents cannot be changed once the string is created
-- [10.11]()
+- [10.11](https://github.com/aalons012/Java-notes/blob/main/Andy's%20Notes.md#xxi---the-stringbuilder-and-stingbufferclasses) - The StringBuilder and StringBuffer classes are similar to the String class except that the String class is immutable
+## Chapter 11
+
+-----------------------------------------------------
 # Chapter I - Intro to Computers, Programs & Java
 Trust me no one needs to understand this unless like if you really wanna know heres a summary 
 
@@ -1360,3 +1363,110 @@ System.out.print(
 ```
 ----------------------------
 ## X.XI - The StringBuilder and StingBufferClasses
+In general, the StringBuilder and StringBuffer classes can be used wherever a string is used. StringBuilder and StringBuffer are more flexible than String. You can add, insert, or append new contents into StringBuilder and StringBuffer objects, whereas the value of a String object is fixed once the string is created. The StringBuilder class is similar to StringBuffer except that the methods for modifying the buffer in StringBuffer are synchronized, which means that only one task is allowed to execute the methods. Use StringBuffer if the class might be accessed by multiple tasks concurrently, because synchronization is needed in this case to prevent corruptions to StringBuffer. Concurrent programming will be introduced in Chapter 32. Using StringBuilder is more efficient if it is accessed by just a single task, because no synchronization is needed in this case. The constructors and methods in StringBuffer and StringBuilder are almost the same. This 
+section covers StringBuilder. You can replace StringBuilder in all occurrences in this 
+section by StringBuffer. The program can compile and run without any other changes.
+The StringBuilder class has three constructors and more than 30 methods for managing the 
+builder and modifying strings in the builder. You can create an empty string builder using new StringBuilder() or a string builder from a string using new StringBuilder(String), as shown in Figure 10.18
+
+----------------------------------------------
+10.18 - The StringBuilder class contains the constructors for creating instances of StringBuilder
+![image](https://github.com/user-attachments/assets/7b629e32-8ae2-4929-b8e9-1bdcde326288)
+
+---------------
+### X.XI.I - Modifying Strings in the StringBuilder
+You can append new contents at the end of a string builder, insert new contents at a specified position in a string builder, and delete or replace characters in a string builder, using the methods listed in Figure 10.19
+
+-----------------------------
+10.19 - The StringBuilder class contains the methods for modifying string builders.
+![image](https://github.com/user-attachments/assets/bac99b91-1cc4-4374-b8d0-99f8bdebc492)
+
+------------------
+The StringBuilder class provides several overloaded methods to append boolean, 
+char, char[], double, float, int, long, and String into a string builder. 
+
+For example, the following code appends strings and characters into stringBuilder to form a new string, Welcome to Java:
+```
+StringBuilder stringBuilder = new StringBuilder();
+stringBuilder.append("Welcome");
+stringBuilder.append(' ');
+stringBuilder.append("to");
+stringBuilder.append(' ');
+stringBuilder.append("Java");
+```
+The StringBuilder class also contains overloaded methods to insert boolean, char, char array, double, float, int, long, and String into a string builder. Consider the following code:
+```
+stringBuilder.insert(11, "HTML and ");
+```
+Suppose stringBuilder contains Welcome to Java before the insert method is applied. This code inserts "HTML and " at position 11 in stringBuilder (just before the J). The new stringBuilder is Welcome to HTML and Java.
+
+You can also delete characters from a string in the builder using the two delete methods, 
+reverse the string using the reverse method, replace characters using the replace method, 
+or set a new character in a string using the setCharAt method.
+
+For example, suppose stringBuilder contains Welcome to Java before each of the 
+following methods is applied:
+```
+stringBuilder.delete(8, 11) changes the builder to Welcome Java.
+stringBuilder.deleteCharAt(8) changes the builder to Welcome o Java.
+stringBuilder.reverse() changes the builder to avaJ ot emocleW.
+stringBuilder.replace(11, 15, "HTML") changes the builder to Welcome to HTML.
+stringBuilder.setCharAt(0, 'w') sets the builder to welcome to Java.
+```
+All these modification methods except setCharAt do two things:
+1. Change the contents of the string builder
+2. Return the reference of the string builder
+
+For example, the following statement:
+```
+StringBuilder stringBuilder1 = stringBuilder.reverse();
+```
+reverses the string in the builder and assigns the builder’s reference to stringBuilder1. Thus, 
+stringBuilder and stringBuilder1 both point to the same StringBuilder object. Recall 
+that a value-returning method can be invoked as a statement, if you are not interested in the return value of the method. In this case, the return value is simply ignored. 
+
+For example, in the following statement:
+```
+stringBuilder.reverse():
+```
+the return value is ignored. Returning the reference of a StringBuilder enables the StringBuilder methods to be invoked in a chain such as the following:
+```
+stringBuilder.reverse().delete(8, 11).replace(11, 15, "HTML");
+```
+----------------------
+**TIP** - String or String StringBuilder?
+
+If a string does not require any change, use String rather than StringBuilder. String is more efficient than StringBuilder.
+
+------------------------------------
+### X.XI.II - The toString, capacity, length, setLength, and charAt Methods
+
+The StringBuilder class provides the additional methods for manipulating a string builder and obtaining its properties, as shown in Figure 10.20
+
+------------------------------
+10.20 - The StringBuilder class contains the methods for modifying string builders.
+![image](https://github.com/user-attachments/assets/8a2f5cfe-2aae-493b-9bf2-865f68fff1ff)
+
+----------------------------------
+The capacity() method returns the current capacity of the string builder. The capacity 
+is the number of characters the string builder is able to store without having to increase its size.
+
+The length() method returns the number of characters actually stored in the string 
+builder. The setLength(newLength) method sets the length of the string builder. If the 
+newLength argument is less than the current length of the string builder, the string builder is truncated to contain exactly the number of characters given by the newLength argument. If the newLength argument is greater than or equal to the current length, sufficient null characters (\u0000) are appended to the string builder so length becomes the newLengthargument. The newLength argument must be greater than or equal to 0.
+
+The charAt(index) method returns the character at a specific index in the string builder. 
+The index is 0 based. The first character of a string builder is at index 0, the next at index 1, and so on. The index argument must be greater than or equal to 0, and less than the length of the string builder
+
+--------------------
+**NOTE** - Length and capacity 
+
+The length of the string builder is always less than or equal to the capacity of the builder. The length is the actual size of the string stored in the builder, and the capacity is the current size of the builder. The builder’s capacity is automatically increased if more characters are added to exceed its capacity. Internally, a string builder is an array of characters, so the builder’s capacity is the size of the array. If the builder’s capacity is exceeded, the array is replaced by a new array. The new array size is 2 * (the previous array size + 1)
+
+---------------------------------
+**TIP** - Initial capacity
+
+You can use new StringBuilder(initialCapacity) to create a StringBuilder with a specified initial capacity. By carefully choosing the initial capacity, you can make your program more efficient. If the capacity is always larger than the actual length of the builder, the JVM will never need to reallocate memory for the builder. On the other hand, if the capacity is too large, you will waste memory space. You can use the trimToSize() method to reduce the capacity to the actual size
+
+-------------------------------------
+# Chapter XI
