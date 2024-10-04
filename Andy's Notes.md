@@ -28,7 +28,7 @@ If you cant see ANY of Source Codes...Or read them...[Click on me](https://githu
 - [10.4](https://github.com/aalons012/Java-notes/blob/main/Andy's%20Notes.md#xiv---class-relationships) - To design Classes, you need to explore the relationships among classes. The common relationships among classes are association, aggregation, composition, and inheritance
 - [10.5 & 10.6](https://github.com/aalons012/Java-notes/blob/main/Andy's%20Notes.md#xv--vi-case-studies) - Case Studies
 - [10.7](https://github.com/aalons012/Java-notes/blob/main/Andy's%20Notes.md#xvii---processing-primitive-data-type-values-as-objects) - A primitive-type is not an object, but it can be wrapped in an object using a wrapper class in the Java API
-- [10.8]()
+- [10.8](https://github.com/aalons012/Java-notes/blob/main/Andy's%20Notes.md#xviii---automatic-conversion-between-primitive-types-and-wrapper-class-types) - A Primitive type value can be automatically converted to an object using a wrapper class, and vice versa, depending the context
 - [10.9]()
 - [10.10]()
 - [10.11]()
@@ -997,3 +997,26 @@ String.format("%x", 26) returns 1A;
 ```
 ------------------------------------
 ## X.VIII - Automatic Conversion between Primitive Types and Wrapper Class Types
+
+Converting a perimitive value to a wrapper object is called **_Boxing_**
+- The Reverse conversion is called Unboxing.
+
+Java allows primitive types and wrapper classes to be converted automatcally.
+- The compiler will automatically box a primitive value that appears in a context requiring an object, and unbox an object that appears in a contex requiring a primitive value.
+  - This is called _AutoBoxing & Auto**UN**boxing_
+
+For Instance,
+- the following statement in (a) can be simplified as in (b) using autoboxing.The following statement in (a) is the same as in (b) due to autounboxing.
+
+![image](https://github.com/user-attachments/assets/cc90f3c5-707d-4a70-a9cb-78e520f457f6)
+
+Consider this as the example ↓↓↓
+![image](https://github.com/user-attachments/assets/b9039d2b-22d0-4d8b-8494-02b7ecabfbc0)
+```
+Integer[] intArray = {1, 2, 3};
+System.out.println(intArray[0] + intArray[1] + intArray[2]);
+```
+In line 1, the primitive values 1, 2, and 3 are automatically boxed into objects Integer. valueOf(1), Integer.valueOf(2), and Integer.valueOf(3). In line 2, the objects intArray[0], intArray[1], and intArray[2] are automatically unboxed into int values that are added together.
+
+------------------------
+## X.IX - The BigInteger and BigDecimal Classes
