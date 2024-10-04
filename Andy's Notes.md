@@ -537,4 +537,33 @@ Knowing these 3...
 Classes provide more flexibility and modularity for building reusable software. 
 
 In chapter III.IV there was a program for computing the body mass index (BMI) called ```ComputeAndInterperetBMI.java```
-[click here]()
+[click here](https://github.com/aalons012/Java-notes/blob/main/COP_2800_and_2805C/Source%20Codes/2805C%20-%20Java%20II/Chapter%20III%20Source%20Codes/ComputeAndInterpretBMI.java)
+
+when you see how its been formated it is only on the ```main``` method
+- meaning that it cannot be reused in other programs
+
+Lets change that :))
+
+To make it reusable,
+- define a static method to compiute BMI as follows
+```
+public static void double getBMI(double weight, double height)
+```
+This is useful for computing the BMI for a specified weight and height but has limitations
+> Suppose you need to associate the weight and height with a person’s name and birth date. You could declare separate variables to store these values, but these values would not be tightly coupled.
+
+The Ideal way to couple them is...
+- creating an object that contains them all.
+
+Since they are tied to individual objects, they should be stored instance data fields
+- you can define a class named ```BMI``` as shown in 10.3
+
+------------------------------------------------------------------
+10.3 - The ```BMI``` class encapsulates BMI information
+![image](https://github.com/user-attachments/assets/413958f4-8830-45b6-905e-73a67a3510e5)
+
+-------------------------
+Assume that the ```BMI``` class is available. ```UseBMIClass.java``` gives a test program that uses this class
+
+-------
+## ```UseBMIClass.java```
