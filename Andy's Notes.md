@@ -25,7 +25,10 @@ If you cant see ANY of Source Codes...Or read them...[Click on me](https://githu
 - The focus of this chapter is on class design and to explore the differences between procedural programming and object-oriented programming
 - [10.2](https://github.com/aalons012/Java-notes/blob/main/Andy's%20Notes.md#xii---class-abstraction-and-encapsulation) - Class Abstraction is seperation of class implementation from the use of a class. the details of implementation from the use of a class. The details of implementation are encapsulated and hidden from the user. This is known as class encapsuation
 - [10.3](https://github.com/aalons012/Java-notes/blob/main/Andy's%20Notes.md#xiii---thinking-in-objects) - The procedural paradigm focuses on designing methods. The object-oriented paradigm couples data and methods together into objects. Software design using the object-oriented paradigm focuses on objects and operations on objects.
-
+- [10.4](https://github.com/aalons012/Java-notes/blob/main/Andy's%20Notes.md#xiv---class-relationships) - To design Classes, you need to explore the relationships among classes. The common relationships among classes are association, aggregation, composition, and inheritance
+- [10.5]()
+- [10.6]()
+- 
 # Chapter I - Intro to Computers, Programs & Java
 Trust me no one needs to understand this unless like if you really wanna know heres a summary 
 
@@ -578,7 +581,7 @@ and then below creating the objects you get to see the instance methods like ```
 ANNNNDDDDDDDD ```BMI.java``` class can be implemented...dont believe me? look at the program below
 
 -------------------------------------
-## ```BMI.java```
+### ```BMI.java```
 > THIS IS HOW I CODE SORRY IF IT LOOKS CONFUSING
 > and sorry for being too zoomed out if you cant see [look here]()
 
@@ -610,3 +613,208 @@ Programming in Java involves thinking in terms of objects;
 
 --------------------------------------
 ## X.IV - Class Relationships
+This Section explores:
+- association
+- aggregation
+- composition
+
+The inheritance relation will be introduced in [Chapter 11]()
+### X.IV.I - Association
+It is a general binary relationship that describes an activity between 2 classes
+
+for Example
+>  a student taking a course is an association between the ```Student``` class and the ```Course``` class, and a faculty member teaching a course is an association between the ```Faculty``` class and the ```Course``` class
+
+As these associations can be represented in UML graphical notation, as shown below, 10.4
+
+----------------
+10.4 - This UML diagram shows that a student may take any number of courses, a faculty member may teach at most 3 courses, a course may from 5 to 60 students, and a course is taught by only one faculty member
+
+![image](https://github.com/user-attachments/assets/9da79705-eadb-4544-9855-48c0a9c94c84)
+
+-------------------
+An association is illustrated by a solid line between 2 classes with an optional label that can describe the relationship. In the Image above, 10.4, the labels are _Take_ and _Teach_. Each relationship may have an optional small black triangle that indicates the direction of the relationship
+- In this figure, the ► indicates that a student takes a course (as opposed to a course taking a student).
+- Each class involved in the relationship may have a role name that describes the role it plays in the relationship. In Figure 10.4, _teacher_ is the role name for ```Faculty```.
+- Each class involved in an association may specify a _multiplicity_, which is placed at the side of the class to specify how many of the class’s objects are involved in the relationship in UML. A multiplicity could be a number or an interval that specifies how many of the class’s objects are involved in the relationship. The character * means an unlimited number of objects, and the interval ```m..n``` indicates that the number of objects is between ```m``` and ```n```, inclusively
+
+In Figure 10.4, each student may take any number of courses, and each course must have at least 5 and at most 60 students. Each course is taught by only one faculty member, and a faculty member may teach from 0 to 3 courses per semester.
+- In java
+  - you can implement associations by using data fields and methods
+    - Example, The relationships in 10.4 may be implemented in 10.5 (image below the texts)
+      - The relation “a student takes a course” is implemented using the ```addCourse``` method in the ```Student``` class and the ```addStudent``` method in the ```Course``` class. The relation “a faculty teaches a course” is implemented using the ```addCourse``` method in the ```Faculty``` class and the ```setFaculty``` method in the ```Course``` class. The ```Student``` class may use a list to store the courses that the student is taking, the ```Faculty``` class may use a list to store the courses that the faculty is teaching, and the Course class may use a list to store students enrolled in the course and a data field to store the instructor who teaches the course.
+     
+--------------------------
+10.5 - The associations relations are implemented using data fields and methods in classes
+
+![image](https://github.com/user-attachments/assets/b5d4a0ce-c27a-4293-98fd-9f3706fb98f2)
+
+------------------------
+**NOTE** - Many possible implementations
+
+There are many possible ways to implement relationships. 
+
+For example, 
+- the student and faculty information in the Course class can be omitted, since they are already in the Student and Faculty class.
+  - Likewise, if you don’t need to know the courses a student takes or a faculty member teaches,
+    - the data field courseList and the addCourse method in Student or Faculty can be omitted
+
+----------------
+### X.IV.II - Aggregartion and Composition
+Aggregation
+- a special form of association that represents on ownership relationship between 2 objects
+- Aggregation models _has-a_ relationship
+
+The **owner** object is called an _aggregating object_, and its class is an _aggregating class_
+
+The **subject** object is called an _aggregated object_, and its class is an _aggregated class_
+
+In java, we refer aggregation between 2 objects as _composition_
+
+if the existance of the aggregated object is dependent on the on the aggregating object. In other words, _if a relationship is composition_ 
+- the aggregated object cannot exist on its own
+
+EXAMPLE
+-  “a student has a name” is a composition relationship between the ```Student``` class and the ```Name``` class because ```Name``` is dependent on Student,
+
+whereas
+- “a student has an address” is an aggregation relationship between the ```Student``` class and the ```Address``` class because an address can exist by itself.
+
+Composition implies exclusive ownership. One object owns another object
+
+When the owner object is destroyed, 
+- the dependent object is destroyed as well.
+
+In UML, 
+- a filled diamond is attached to an aggregating class...
+  - (in this case, ```Student```)
+- ...to denote the composition relationship with an aggregated class (```Name```)
+- and an empty diamond is attached to an aggregating class (```Student```) to denote the aggregation relationship with an aggregated class (```Address```)
+
+As shown in Figure 10.6.
+
+-------------------
+10.6 - Each student has a name and an address
+
+![image](https://github.com/user-attachments/assets/02ee564a-244e-420d-a724-e43ee9ae42d0)
+
+In Figure 10.6, each student has only one multiplicity—address—and each address can be shared by up to 3 students. Each student has one name, and the name is unique for each student
+
+An aggregation relationship is usually represented as a data field in the aggregating class.
+
+EXAMPLE
+- the relationships in Figure 10.6 may be implemented using the classes in Figure 10.7 (image Below).
+- The relation “a student has a name” and “a student has an address”
+  - are implemented in the data field name and address in the ```Student``` class.
+
+---------------------------
+10.7 - The Composition relations are implemented using data fields in classes.
+
+![image](https://github.com/user-attachments/assets/94ca8455-ab26-4b59-b762-ae285e22d7c3)
+
+--------
+Aggregation may actually exist between objects of the same class
+
+Example,
+a person may have a supervisor
+
+As shown in 10.8 ↓↓↓
+
+--------
+10.8 - A person may have a supervisor.
+
+![image](https://github.com/user-attachments/assets/15cc3d21-96c7-4ac5-a857-f83051c9a366)
+
+--------
+In the realtionship "a person has a supervisor", a supervisor can be represented as a data field in the ```Person``` class, as follows:
+```
+public class Person {
+  // The type for the data is the class itself
+  private Person supervior;
+}
+```
+If a person can have several supervisors, you may use an array to store supervisors
+- as shown below ↓↓↓
+
+------------------------
+10.9 - A person can have several supervisors
+
+![image](https://github.com/user-attachments/assets/a3ee2733-108c-463e-a28a-19ca6715f882)
+
+-----------------------
+**IMPORTANT NOTE** - Aggregation or composition
+Since aggregation and composition relationships are represented using classes in the same way, we will not differentiate them and call both compositions for simplicity
+
+----------------------
+## X.V & VI Case Studies
+### X.v - Designing the Course Class
+This section designs a class for modeling courses.
+
+> This book’s philosophy is teaching by example and learning by doing. The book provides a wide variety of examples to demonstrate object-oriented programming. This section and the next offer additional examples on designing classes.
+
+Suppose you need to process course information. Each course has a name and has students enrolled. You should be able to add/drop a student to/from the course. You can use a class to model the courses, as shown below ↓↓↓
+
+--------------------------------------
+10.10 - The ```Course``` class models the courses.
+
+![image](https://github.com/user-attachments/assets/e4ea8b05-13f2-4b13-8401-63fdf3730267)
+> A Course object can be created using the constructor Course(String name) by passing a course name. You can add students to the course using the addStudent(String student) method, drop a student from the course using the dropStudent(String student) method, and return all the students in the course using the getStudents() method. Suppose that the Course class is available;
+
+```TestCourse.java``` gives a test class that creates 2 courses and adds students to them
+
+----------------------------------------
+### ```TestCourse.java```
+
+![image](https://github.com/user-attachments/assets/42b46f51-b99e-4064-ab82-c8615dc7d733)
+The Course class is implemented in Listing 10.6. 
+> It uses an array to store the students in the course. For simplicity, assume the maximum course enrollment is 100. The array is created using new String[100]. The addStudent method adds a student to the array. Whenever a new student is added to the course, numberOfStudents is increased. The getStudents method returns the array. The dropStudent method is left as an exercise.
+
+--------------------------------------
+### ```Course.java```
+
+![image](https://github.com/user-attachments/assets/ba06e978-286d-4153-b439-7520d962c581)
+> The array size is fixed to be 100, so you cannot have more than 100 students in the course. When you create a Course object, an array object is created. A Course object contains a reference to the array. For simplicity, you can say the Course object contains the array. The user can create a Course object and manipulate it through the public methods addStudent, dropStudent, getNumberOfStudents, and getStudents. However, the user doesn’t need to know how these methods are implemented. The Course class encapsulates the internal implementation. This example uses an array to store students, but you could use a different data structure to store students. The program that uses Course does not need to change as long as the contract of the public methods remains unchanged.
+
+----------
+### X.VI - Designing a Class for Stacks
+This section designs a class for modeling stacks.
+
+Recall that a stack is a data structure that holds data in a last-in, first-out fashion, as shown in Figure 10.11.
+
+------------
+10.11 - A Stack holds data in a last-in, first-out fashion
+
+![image](https://github.com/user-attachments/assets/b7456fba-d035-4773-a39f-0a512b2f8d88)
+Stacks have many examples
+
+Example
+- the compiler uses a stack to process method invocations. When a method is invoked, its parameters and local variables are pushed into a stack. When a method calls another method, the new method’s parameters and local variables are pushed into the stack. When a method finishes its work and returns to its caller, its associated space is released from the stack.
+
+You can define a class to model stacks. For simplicity, assume the stack holds the int values. Thus, name the stack class StackOfIntegers. The UML diagram for the class is shown in Figure 10.12.
+
+-----------------------
+10.12 - The StackOfIntegers class encapsulates the stack storage and provides the operations for manipulating the stack.
+
+![image](https://github.com/user-attachments/assets/ef16db00-c00b-4534-b790-ea98b05418ca)
+Suppose the class is available. The test program in Listing 10.7 uses the class to create a stack, store 10 integers 0, 1, 2, . . . , and 9, and displays them in reverse order...hmmmmmm
+
+----------------------
+### ```TestStackOfIntegers.java```
+
+![image](https://github.com/user-attachments/assets/c16ac313-b9e1-4f0e-ae23-2a7d094f5196)
+
+How do you implement the StackOfIntegers class? The elements in the stack are stored in an array named elements. When you create a stack, the array is also created. The no-arg constructor creates an array with the default capacity of 16. The variable size counts the number of elements in the stack, and size – 1 is the index of the element at the top of the stack, as shown in Figure 10.13. For an empty stack, size is 0.
+
+------------------
+10.3 - The ```StackOfIntegers``` uses an array to store the elements in a stack
+
+![image](https://github.com/user-attachments/assets/4d1f4799-cb12-4a94-bee7-7ce11bb41ced)
+The StackOfIntegers class is implemented in Listing 10.8. The methods empty(), peek(), pop(), and getSize() are easy to implement. To implement push(int value), assign value to elements[size] if size < capacity. If the stack is full (i.e., size >= capacity), create a new array of twice the current capacity, copy the contents of the current array to the new array, and assign the reference of the new array to the current array in the stack. Now you can add the new value to the array.
+
+------------
+### ```StackOfIntegers.java```
+
+![image](https://github.com/user-attachments/assets/b1074136-ebec-4811-8f53-768886ed5996)
+
+-------------------------
+## X.VII 
