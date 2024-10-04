@@ -583,3 +583,30 @@ ANNNNDDDDDDDD ```BMI.java``` class can be implemented...dont believe me? look at
 > and sorry for being too zoomed out if you cant see [look here]()
 
 ![image](https://github.com/user-attachments/assets/5936f3f8-d5ad-4972-9ada-e3dba97a6377)
+
+---------------------------------------
+the mathematical formula for computing the BMI uising weight and height is given in 3.8
+
+The instance method 
+- ```getBMI()```
+
+Returns BMI
+
+Since the weight and height are instance data fields in the object
+- ```getBMI()``` method can use these properties to compute the BMI for the object
+
+The instance method 
+- ```getStatus```
+
+Returns a string that interprets the BMI
+> This example demonstrates the advantages of the object-oriented paradigm over the procedural paradigm. The procedural paradigm focuses on designing methods. The object-oriented paradigm couples data and methods together into objects. Software design using the object-oriented paradigm focuses on objects and operations on objects. The object-oriented approach combines the power of the procedural paradigm with an added dimension that integrates data with operations into objects
+
+In procedural programming, data and operations on the data are separate, and this methodology requires passing data to methods. Object-oriented programming places data and the operations that pertain to them in an object
+
+This approach solves many of the problems inherent in procedural programming. The object-oriented programming approach organizes programs in a way that mirrors the real world, in which all objects are associated with both attributes and activities. Using objects improves software reusability and makes programs easier to develop and easier to maintain. 
+
+Programming in Java involves thinking in terms of objects; 
+- a Java program can be viewed as a collection of cooperating objects
+
+--------------------------------------
+## X.IV - Class Relationships
