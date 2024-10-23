@@ -32,7 +32,8 @@ If you cant see ANY of Source Codes...Or read them...[Click on me](https://githu
 - [10.9](https://github.com/aalons012/Java-notes/blob/main/Andy's%20Notes.md#xix---the-biginteger-and-bigdecimal-classes) - The ```BigInteger``` and ```BigDecimal``` classes can be used to represent integers or decimal numbers of any size and precision
 - [10.10](https://github.com/aalons012/Java-notes/blob/main/Andy's%20Notes.md#xx---the-string-class) - A ```String``` object is immutable; its contents cannot be changed once the string is created
 - [10.11](https://github.com/aalons012/Java-notes/blob/main/Andy's%20Notes.md#xxi---the-stringbuilder-and-stingbufferclasses) - The StringBuilder and StringBuffer classes are similar to the String class except that the String class is immutable
-## Chapter 11
+## Chapter 13
+- [10.1]() A superclass defines common behavior for related subclasses. An interface can be used to define common behavior for classes (including unrelated classes)
 
 -----------------------------------------------------
 # Chapter I - Intro to Computers, Programs & Java
@@ -1469,4 +1470,6 @@ The length of the string builder is always less than or equal to the capacity of
 You can use new StringBuilder(initialCapacity) to create a StringBuilder with a specified initial capacity. By carefully choosing the initial capacity, you can make your program more efficient. If the capacity is always larger than the actual length of the builder, the JVM will never need to reallocate memory for the builder. On the other hand, if the capacity is too large, you will waste memory space. You can use the trimToSize() method to reduce the capacity to the actual size
 
 -------------------------------------
-# Chapter XI
+# Chapter XIII 
+yeah no i fucking give up fuck this shiit man
+Look at the Outlines
