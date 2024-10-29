@@ -1,4 +1,7 @@
-# COP 2800 & 2805C - Java I & II Notes
+## Andy's Java Notes
+
+## Would Recommend looking at the Table of Contents 
+
 If you cant see ANY of Source Codes...Or read them...[Click on me](https://github.com/aalons012/Java-notes/tree/main/COP_2800_and_2805C/Source%20Codes)
 # [Vocabulary](https://quizlet.com/946298625/java-vocabulary-flash-cards/?funnelUUID=01255e6f-adf7-440a-9f08-a111d5e187c9)
 # Key Points
@@ -13,6 +16,8 @@ If you cant see ANY of Source Codes...Or read them...[Click on me](https://githu
 - [1.8](https://github.com/aalons012/Java-notes/blob/main/Andy's%20Notes.md#iviii-creating-compiling-and-executing-a-java-program) - You save a Java program in a ```.java``` file and compile it in a ```.class``` file. the ```.class``` file is executed by the Java Virtual Machine (JVM)
 - [1.9](https://github.com/aalons012/Java-notes/blob/main/Andy's%20Notes.md#iix---programming-style-and-documentation) - Good Programming Style and paper documentation make a program easy to read and helkp prorammers prevent errors
 - [1.10](https://github.com/aalons012/Java-notes/blob/main/Andy's%20Notes.md#ix---programming-errors) - Programming errors can be categorized into 3 types: _syntax, runtime, and logic errors_
+- [1.11]() - You can edit, compile, run, and debug Java Programs using NetBeans.
+- [1.12]() - You can edit, compile, run, and debug Java Programs using Eclipse.
 ## Chapter 2
 - 
 ## Chapter 3
