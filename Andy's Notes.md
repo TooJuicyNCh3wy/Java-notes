@@ -2,7 +2,7 @@
 If you cant see ANY of Source Codes...Or read them...[Click on me](https://github.com/aalons012/Java-notes/tree/main/COP_2800_and_2805C/Source%20Codes)
 # [Vocabulary](https://quizlet.com/946298625/java-vocabulary-flash-cards/?funnelUUID=01255e6f-adf7-440a-9f08-a111d5e187c9)
 # Key Points
-## Chapter 1
+## Chapter 1 - Introduction to computers
 - [1.1](https://github.com/aalons012/Java-notes/blob/main/Andy's%20Notes.md#ii---introduction) - The Central theme of this is to learn how to solve problems by writing a program
 - [1.2](https://github.com/aalons012/Java-notes/blob/main/Andy's%20Notes.md#iii---what-is-a-computer) - A Computer is an Electric device that stores and process data
 - [1.3](https://github.com/aalons012/Java-notes/blob/main/Andy's%20Notes.md#iiii---programming-languages) - Computer programs, known as Software, are instructors that tell a computer what to do
