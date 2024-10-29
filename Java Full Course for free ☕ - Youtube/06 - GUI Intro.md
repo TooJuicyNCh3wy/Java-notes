@@ -36,3 +36,10 @@ JOptionPane.showMessageDialog(parentComponent, message)
 ```
 parentComponent is determined where the frame in which the dialog is displayed
 - if null, or if the parentComponent has no Frame, a default Frame is used. message - the Object to display in the middle of the box, the question to ask.
+
+but for the moment, well use ```null``` first 
+soo we add in the parentheses
+```
+(null,message)
+```
+and then from there add text under ```message```
