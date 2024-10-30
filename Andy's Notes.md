@@ -16,8 +16,8 @@ If you cant see ANY of Source Codes...Or read them...[Click on me](https://githu
 - [1.8](https://github.com/aalons012/Java-notes/blob/main/Andy's%20Notes.md#iviii-creating-compiling-and-executing-a-java-program) - You save a Java program in a ```.java``` file and compile it in a ```.class``` file. the ```.class``` file is executed by the Java Virtual Machine (JVM)
 - [1.9](https://github.com/aalons012/Java-notes/blob/main/Andy's%20Notes.md#iix---programming-style-and-documentation) - Good Programming Style and paper documentation make a program easy to read and helkp prorammers prevent errors
 - [1.10](https://github.com/aalons012/Java-notes/blob/main/Andy's%20Notes.md#ix---programming-errors) - Programming errors can be categorized into 3 types: _syntax, runtime, and logic errors_
-- [1.11]() - You can edit, compile, run, and debug Java Programs using NetBeans.
-- [1.12]() - You can edit, compile, run, and debug Java Programs using Eclipse.
+- [1.11]() - You can edit, compile, run, and debug Java Programs using **NetBeans**.
+- [1.12]() - You can edit, compile, run, and debug Java Programs using **Eclipse**.
 ## Chapter 2
 - 
 ## Chapter 3
@@ -103,6 +103,69 @@ It comes in 3 Editions
 
 - [Java Full Course for free ☕ - Youtube](https://github.com/aalons012/Java-notes/blob/main/Java%20Full%20Course%20for%20free%20%E2%98%95%20-%20Youtube/01%20-%20Java%20-%20Tutorial%20%26%20Basic%20Inputs.md)
 - [W3 Schools](https://github.com/aalons012/Java-notes/blob/main/W3%20Schools/1%20-%20Java%20Tutorial/03%20-%20Getting%20Started.md)
+
+if you dont think these work then well do it here then
+
+Let’s begin with a simple Java program that displays the message Welcome to Java! on the console. (The word console is an old computer term that refers to the text entry and display device of a computer. Console input means to receive input from the keyboard, and console output means to display output on the monitor.) The program is given below ↓↓↓
+
+![image](https://github.com/user-attachments/assets/39f8c9d0-2198-4da7-96d7-497547a6f7f1)
+
+REMEMBER!!!!
+> the line numbers are for reference purposes only; IT IS NOT PART OF THE PROGRAM
+>
+> so please dont write that down
+>
+> you should fucking know that if you already know a coding language fucking idiot LOL kidding anyways
+>
+
+from the image above ↑↑↑
+- Line 1 defines a class
+  - Every Java program must have at least one class. Each class has a name. By convention, class names start with an uppercase letter. In this example, the class name is Welcome.
+- Line 2 defines the ```main``` method
+  > Would recommend using this video on why the ```main``` method is like that
+  >
+  > [main Method Explained](https://www.youtube.com/watch?v=P-_Nzi_mCRo&t=272s&ab_channel=CodingwithJohn)
+  - The program is executed from the main method. A class may contain several methods. The main method is the entry point where the program begins execution.
+  - A method is a construct that contains statements. The main method in this program contains the System.out.println statement. This statement displays the string ```Welcome to Java!``` on the console (line 4).
+    
+String is a programming term meaning a sequence of characters. A string must be enclosed in double quotation marks. Every statement in Java ends with a semicolon (;), known as the statement terminator.
+
+Keywords have a specific meaning to the compiler and cannot be used for other purposes in the program. For example, when the compiler sees the word class, it understands that 
+
+ the word after class is the name for the class. Other keywords in this program are public, 
+static, and void.
+ Line 3 is a comment that documents what the program is and how it is constructed. Comments help programmers to communicate and understand the program. They are not programming statements, and thus are ignored by the compiler. In Java, comments are preceded by two slashes (//) on a line, called a line comment, or enclosed between /* and */ on one or several lines, called a block comment or paragraph comment. When the compiler sees //, it ignores all text after // on the same line. When it sees /*, it scans for the next */ and ignores 
+any text between /* and */. Here are examples of comments:
+```
+ // This application program displays Welcome to Java!
+ /* This application program displays Welcome to Java! */
+ /* This application program
+   displays Welcome to Java! */
+```
+A pair of braces in a program forms a block that groups the program’s components. In Java, each block begins with an opening brace ({) and ends with a closing brace (}). Every class has a class block that groups the data and methods of the class. Similarly, every method has a method block that groups the statements in the method. Blocks can be nested, meaning that one block can be placed within another, as shown in the following code:
+
+![image](https://github.com/user-attachments/assets/0325a1fb-3189-47e1-b32c-4aa93eae585c)
+
+-----------------------------------------------
+Tip
+
+An opening brace must be matched by a closing brace. Whenever you type an opening 
+brace, immediately type a closing brace to prevent the missing-brace error. Most Java 
+IDEs automatically insert the closing brace for each opening brace.
+
+---------------------------------------------
+!!!CAUTION!!!
+
+Java source programs are case sensitive. It would be wrong, for example, to replace main in the program with Main.
+
+--------------------------------------------
+
+You have seen several special characters (e.g., { }, //, ;) in the program. They are used in almost every program. Table 1.2 summarizes their uses.
+
+The most common errors you will make as you learn to program will be syntax errors. Like any programming language, Java has its own syntax, and you need to write code that conforms to the syntax rules. If your program violates a rule—for example, if the semicolon is missing, a brace is missing, a quotation mark is missing, or a word is misspelled—the Java compiler will report syntax errors. Try to compile the program with these errors and see what the compiler reports
+
+![image](https://github.com/user-attachments/assets/f0419264-f16d-4bd6-a8a7-9debc886262c)
+
 
 ## I.VIII Creating, Compiling, and Executing a Java Program
 Java programs are saved in .java files, compiled into .class files, and executed by the JVM. The process involves:
