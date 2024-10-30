@@ -41,7 +41,7 @@ If you cant see ANY of Source Codes...Or read them...[Click on me](https://githu
 - [10.1]() A superclass defines common behavior for related subclasses. An interface can be used to define common behavior for classes (including unrelated classes)
 
 -----------------------------------------------------
-# Chapter I - Intro to Computers, Programs & Java
+# I - Intro to Computers, Programs & Java
 Trust me no one needs to understand this unless like if you really wanna know heres a summary 
 
 [W3 Schools](https://github.com/aalons012/Java-notes/blob/main/W3%20Schools/1%20-%20Java%20Tutorial/02%20-%20Intro.md)
@@ -183,12 +183,12 @@ The chapter introduces three types of programming errors:
 - Logic Errors: These are errors in the program’s logic that result in incorrect output, even if the program runs successfully.
 
 ------------------------------------------------------
-# Chapter III - Selections
+# III - Selections
 ## III.I Intro
 
 
 ------------------------------------------------------
-# Chapter IX - Objects and Classes
+# IX - Objects and Classes
 ## IX.I & II - Defining Classes for Objects
 Object-oriented programming (OOP)
 - essentially a technology for developing reusable software
@@ -355,7 +355,7 @@ Line 2. ```public static void main(String[] args)```
 - Line 48-50: Defines ```setRadius(double newRadius)```, a method that sets the radius of the circle to a new value provided as an argument.
 
 ----------------------------------------------------------------------------
-# Chapter X - Object-oriented Thinking
+# X - Object-oriented Thinking
 ## Introduction 
 The preceding chapter introduced objects and classes. You learned how to define classes, create objects, and use objects. This book’s approach is to teach problem solving and fundamental programming techniques before object-oriented programming. This chapter shows how procedural and object-oriented programming differ. You will see the benefits of object-oriented 
 programming and learn to use it effectively.
