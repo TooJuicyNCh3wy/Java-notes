@@ -5,7 +5,7 @@
 If you cant see ANY of Source Codes...Or read them...[Click on me](https://github.com/aalons012/Java-notes/tree/main/COP_2800_and_2805C/Source%20Codes)
 # [Vocabulary](https://quizlet.com/946298625/java-vocabulary-flash-cards/?funnelUUID=01255e6f-adf7-440a-9f08-a111d5e187c9)
 # Key Points
-## Chapter 1
+Chapter 1
 - [1.1](https://github.com/aalons012/Java-notes/blob/main/Andy's%20Notes.md#ii---introduction) - The Central theme of this is to learn how to solve problems by writing a program
 - [1.2](https://github.com/aalons012/Java-notes/blob/main/Andy's%20Notes.md#iii---what-is-a-computer) - A Computer is an Electric device that stores and process data
 - [1.3](https://github.com/aalons012/Java-notes/blob/main/Andy's%20Notes.md#iiii---programming-languages) - Computer programs, known as Software, are instructors that tell a computer what to do
@@ -18,15 +18,19 @@ If you cant see ANY of Source Codes...Or read them...[Click on me](https://githu
 - [1.10](https://github.com/aalons012/Java-notes/blob/main/Andy's%20Notes.md#ix---programming-errors) - Programming errors can be categorized into 3 types: _syntax, runtime, and logic errors_
 - [1.11]() - You can edit, compile, run, and debug Java Programs using **NetBeans**.
 - [1.12]() - You can edit, compile, run, and debug Java Programs using **Eclipse**.
-## Chapter 2
-- 
-## Chapter 3
+  
+Chapter 2
+- o
+
+Chapter 3
 - The Program can decide which statments to execute based on a condition
-## Chapter 9
+  
+Chapter 9
 - Object-oriented programming enables you to develop large-scale software and GUIs effectively.
 - A class defines the properties and behaviors for objects
 - Classes are definitions for objects and Objects are created from classes.
-## Chapter 10
+
+Chapter 10
 - The focus of this chapter is on class design and to explore the differences between procedural programming and object-oriented programming
 - [10.2](https://github.com/aalons012/Java-notes/blob/main/Andy's%20Notes.md#xii---class-abstraction-and-encapsulation) - Class Abstraction is seperation of class implementation from the use of a class. the details of implementation from the use of a class. The details of implementation are encapsulated and hidden from the user. This is known as class encapsuation
 - [10.3](https://github.com/aalons012/Java-notes/blob/main/Andy's%20Notes.md#xiii---thinking-in-objects) - The procedural paradigm focuses on designing methods. The object-oriented paradigm couples data and methods together into objects. Software design using the object-oriented paradigm focuses on objects and operations on objects.
@@ -37,7 +41,8 @@ If you cant see ANY of Source Codes...Or read them...[Click on me](https://githu
 - [10.9](https://github.com/aalons012/Java-notes/blob/main/Andy's%20Notes.md#xix---the-biginteger-and-bigdecimal-classes) - The ```BigInteger``` and ```BigDecimal``` classes can be used to represent integers or decimal numbers of any size and precision
 - [10.10](https://github.com/aalons012/Java-notes/blob/main/Andy's%20Notes.md#xx---the-string-class) - A ```String``` object is immutable; its contents cannot be changed once the string is created
 - [10.11](https://github.com/aalons012/Java-notes/blob/main/Andy's%20Notes.md#xxi---the-stringbuilder-and-stingbufferclasses) - The StringBuilder and StringBuffer classes are similar to the String class except that the String class is immutable
-## Chapter 13
+
+Chapter 13
 - [10.1]() A superclass defines common behavior for related subclasses. An interface can be used to define common behavior for classes (including unrelated classes)
 
 -----------------------------------------------------
