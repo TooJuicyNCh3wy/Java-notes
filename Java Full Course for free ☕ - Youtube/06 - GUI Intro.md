@@ -43,3 +43,29 @@ soo we add in the parentheses
 (null,message)
 ```
 and then from there add text under ```message```
+
+giving a response once clicking OK
+
+now
+
+instead of using Strings now lets store this value within an integer
+
+So instead of ```String name =...``` it woud something like...uh...your age → ```int age =```
+
+and by there we copy what was after the "=" ```jOptionPane.showInputDialog(message);```
+
+and bringing them together we have
+```
+int age = jOptionPane.showInputDialog(message);
+```
+but remember this isnt string
+
+soo we need to add something else for the ```jOptionPane.showInputDialog(message);```
+
+we need to add ```Integer.parseInt()``` and within inside the parentheses NOWWW you can add that code inside
+
+AND NOW LETS ADD IT ALL TOGETHER
+```
+int age = Integer.parseInt(jOptionPane.showInputDialog(message));
+```
+and you can do it also on double but remember that you'll always have to change the variable in order to work
