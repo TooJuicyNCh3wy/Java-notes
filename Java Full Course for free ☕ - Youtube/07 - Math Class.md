@@ -41,4 +41,6 @@ lets change the ```double z = Math.min(x, y);``` → ```double z = Math.abs(y);`
 
 since y is the only number that is a negative. And with that it will display the absolute value of y...which is 10.
 
-we also have the Square root 
+we also have the Square root, which is ```Math.sqrt()```
+
+which, shocker, square roots a number
